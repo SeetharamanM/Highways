@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Hotspot I</title>
+         
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
+        
+        
+    </head>
+    <body class="sb-nav-fixed">
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Usilampatti Highways</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Index</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Login
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseRoadData" aria-expanded="false" aria-controls="collapseRoadData">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Road Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseRoadData" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="ListOfRoad.html">List of Roads</a>
+                                    <a class="nav-link" href="CulvertList.html">List of All CD Structures</a>
+                                    <a class="nav-link" href="MinorBridge.html">List of Bridges</a>
+                                    <a class="nav-link" href="PipeCulvert.html">List of Pipe Culverts</a>
+                                    <a class="nav-link" href="BoxCulvert.html">List of Box Culverts</a>
+                                    <a class="nav-link" href="CutStone.html">List of Cut Stone Slab Culverts</a>
+                                    <a class="nav-link" href="Causeway.html">List of Causeways</a>
+                                  
+                                </nav>
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Projects
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjects" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-sidenav-light.html">2022-23 CRIDP Works</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">2022-23 SR Works</a>
+                                    <a class="nav-link" href="mannadimangalam.html">Mannadimangalam Bridge work</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Hot Spot I</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Road Safety Works</a> 
+                                    <a class="nav-link" href="layout-sidenav-light.html">Maintece 2023-24 Works</a>  
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProposals" aria-expanded="false" aria-controls="collapseProposals">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Proposals
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProposals" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Hot Spot II</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Curve Improvement</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>
+                                    <a class="nav-link" href="mannadimangalam.html"></a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a> 
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>  
+                                </nav>
+                                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+              <main>
+                  <div class="container-fluid px-4">
+                    <h1 class="mt-4">LIST OF HOTSPOT PHASE I</h1>
+                      <div class="row">
+                          <div class="card mb-4 shadow">
+                              <div class="card-body">
+                                  <table id="datatablesSimple">
+                                    <thead>
+                                      <tr>
+                                        <th>Sl.No</th>
+                                        <th>Road No</th>
+                                        <th>Name of Road</th>
+                                        <th>Paint</th>
+                                        <th>Studs</th>
+                                        <th>Solar Blinker</th>
+                                        <th>Name Board</th>
+                                        <th>Cautionary Board</th>
+                                        <th>Hazard Marker</th>
+                                        <th>MCB</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      
+                                      <tr>
+                                        <th>1</th>
+                                        <td>SH-154</td>
+                                        <td>Providing Road Furnitures at km 35/2 of Vathalakundu - Peraiyur -Kariyapatti-Thiruchui- Kamuthi-Sayalkudi Road</td>
+                                        <td>29.2</td>
+                                        <td>16</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>3</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>2</th>
+                                        <td>SH-154</td>
+                                        <td>Providing Road Furnitures at km 34/4 of Vathalakundu - Peraiyur -Kariyapatti-Thiruchui- Kamuthi-Sayalkudi Road</td>
+                                        <td>7</td>
+                                        <td>12</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>3</th>
+                                        <td>SH-154</td>
+                                        <td>Providing Road Furnitures at km 28/2 of Vathalakundu - Peraiyur -Kariyapatti-Thiruchui- Kamuthi-Sayalkudi Road</td>
+                                        <td>50.4</td>
+                                        <td>4</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>4</th>
+                                        <td>SH-154</td>
+                                        <td>Providing Road Furnitures at km 22/2 of Vathalakundu - Peraiyur -Kariyapatti-Thiruchui- Kamuthi-Sayalkudi Road</td>
+                                        <td>5.6</td>
+                                        <td>12</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>5</th>
+                                        <td>SH-154</td>
+                                        <td>Providing Road Furnitures at km 20/2 of Vathalakundu - Peraiyur -Kariyapatti-Thiruchui- Kamuthi-Sayalkudi Road</td>
+                                        <td>25.2</td>
+                                        <td>24</td>
+                                        <td></td>
+                                        <td>1.08</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>6</th>
+                                        <td>MDR-721</td>
+                                        <td>Providing Road Furnitures at km 18/8 of Thummakundu - Ulaipatti Road</td>
+                                        <td>52.4</td>
+                                        <td>20</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>7</th>
+                                        <td>MDR-721</td>
+                                        <td>Providing Road Furnitures at km 16/2 of Thummakundu - Ulaipatti Road</td>
+                                        <td>77.4</td>
+                                        <td>40</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td>3</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>8</th>
+                                        <td>MDR-613</td>
+                                        <td>Providing Road Furnitures at km 6/2 of Kokkulam - Uthappanaickanur Road</td>
+                                        <td>10</td>
+                                        <td>16</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>9</th>
+                                        <td>MDR-613</td>
+                                        <td>Providing Road Furnitures at km 21/2 of Kokkulam - Uthappanaickanur Road</td>
+                                        <td>65.9</td>
+                                        <td>40</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>10</th>
+                                        <td>MDR-613</td>
+                                        <td>Providing Road Furnitures at km 19/4 of Kokkulam - Uthappanaickanur Road</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>12</td>
+                                      </tr>
+                                      <tr>
+                                        <th>11</th>
+                                        <td>MDR-613</td>
+                                        <td>Providing Road Furnitures at km 17/4 of Kokkulam - Uthappanaickanur Road</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>4</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>12</th>
+                                        <td>MDR-613</td>
+                                        <td>Providing Road Furnitures at km 11/8 of Kokkulam - Uthappanaickanur Road</td>
+                                        <td>29.2</td>
+                                        <td>28</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>13</th>
+                                        <td>MDR-613</td>
+                                        <td>Providing Road Furnitures at km 10/4 of Kokkulam - Uthappanaickanur Road</td>
+                                        <td>29.2</td>
+                                        <td>28</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>14</th>
+                                        <td>MDR-104</td>
+                                        <td>Providing Road Furnitures at km 7/10 of Elumalai Road</td>
+                                        <td>52.4</td>
+                                        <td>16</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>15</th>
+                                        <td>MDR-104</td>
+                                        <td>Providing Road Furnitures at km 5/2 of Elumalai Road</td>
+                                        <td>34.2</td>
+                                        <td>34</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <th>16</th>
+                                        <td>O-840</td>
+                                        <td>Providing Road Furnitures at km 1/2 of Chellampatti - Thidiyan Road</td>
+                                        <td>27</td>
+                                        <td>24</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>10</td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </main>
+              <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+                </div>
+                </div>
+              </footer>
+            </div>
+                
+            <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            })
+            </script>
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+            <script src="js/scripts.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+            <script src="assets/demo/chart-area-demo.js"></script>
+            <script src="assets/demo/chart-bar-demo.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+            <script src="js/datatables-simple-demo.js"></script>
+            </div>
+    </body>
+</html>

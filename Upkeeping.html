@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Upkeeping Roads</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body class="sb-nav-fixed">
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Usilampatti Highways</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Index</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Login
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseRoadData" aria-expanded="false" aria-controls="collapseRoadData">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Road Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseRoadData" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                              <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="ListOfRoad.html">List of Roads</a>
+                                <a class="nav-link" href="CulvertList.html">List of All CD Structures</a>
+                                <a class="nav-link" href="MinorBridge.html">List of Bridges</a>
+                                <a class="nav-link" href="PipeCulvert.html">List of Pipe Culverts</a>
+                                <a class="nav-link" href="BoxCulvert.html">List of Box Culverts</a>
+                                <a class="nav-link" href="CutStone.html">List of Cut Stone Slab Culverts</a>
+                                <a class="nav-link" href="Causeway.html">List of Causeways</a>
+                            </nav>
+                                                    
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Projects
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjects" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                  <a class="nav-link" href="index.html">2022-23 CRIDP Works</a>
+                                  <a class="nav-link" href="index.html">2022-23 SR Works</a>
+                                  <a class="nav-link" href="mannadimangalam.html">Mannadimangalam Bridge work</a>
+                                  <a class="nav-link" href="index.html">Hot Spot I</a>
+                                  <a class="nav-link" href="index.html">Road Safety Works</a> 
+                                  <a class="nav-link" href="index.html">Maintece 2023-24 Works</a> 
+                                </nav>
+                                                    
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProposals" aria-expanded="false" aria-controls="collapseProposals">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Proposals
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProposals" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Hot Spot II</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Curve Improvement</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>
+                                    <a class="nav-link" href="mannadimangalam.html"></a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a> 
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>  
+                                </nav>
+                                                    
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                      <h1 class="mt-4">LIST OF UPKEEPING ROADS</h1>
+                        
+                        
+                        <div class="row">
+                            <div class="card mb-4 shadow">
+                                
+                                <div class="card-body">
+                                    <table id="datatablesSimple">
+                                      <thead>
+                                        <tr style="text-align: right;">
+                                          <th>SL.No.</th>
+                                          <th>Name of the Work</th>
+                                          <th>Road No.</th>
+                                          <th>Length (KM)</th>
+                                          <th>AS (Lakhs)</th>
+                                          <th>TS (Lakhs) </th>
+                                          <th>Contract value (Lakhs)</th>
+                                          <th>Date of Agreement/ Date of completion as per Agreement </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>1</th>
+                                          <td><h3>CRIDP 2019-20 (Package -73 ) (Cont: Thiru. R. Satheesh)</h3></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <th>2</th>
+                                          <td>Strengthening of Kokkulam-Uthappanaickanur road at Km 21/0-23/0 including Re-construction of of Culvert including upkeeping for period of 60 months</td>
+                                          <td>MDR-613</td>
+                                          <td>2.000</td>
+                                          <td>116.0</td>
+                                          <td>116.0</td>
+                                          <td>102.30</td>
+                                          <td>14.01.2020 -     13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>3</th>
+                                          <td>Strengthening of Thummakkundu-Nalluthevanpatti road at km 0/6 - 3/2 and 4/4 -6/0 including Re-Construction culvert including upkeeping for a period of 60 months</td>
+                                          <td>O-7089</td>
+                                          <td>4.200</td>
+                                          <td>196.0</td>
+                                          <td>196.0</td>
+                                          <td>176.10</td>
+                                          <td>14.01.2020 -     13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>4</th>
+                                          <td>Strengthening of Thummakkundu-Nalluthevanpatti road at km 9/2 - 11/357 including Re-Construction culvert including upkeeping for a period of 60 months</td>
+                                          <td>O-7089</td>
+                                          <td>2.157</td>
+                                          <td>100.0</td>
+                                          <td>100.0</td>
+                                          <td>88.83</td>
+                                          <td>14.01.2020 -     13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>5</th>
+                                          <td>Strengthening of Ediyapatti-Duraisamypurampudur road at km 0/0 - 1/0 including Re-Construction culvert including upkeeping for a period of 60 months</td>
+                                          <td>O-1237</td>
+                                          <td>1.000</td>
+                                          <td>52.0</td>
+                                          <td>52.0</td>
+                                          <td>46.56</td>
+                                          <td>14.01.2020 -     13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>6</th>
+                                          <td>Improvements to Riding Quality at km 0/0 -1/0, 3/0 - 4/0 and 5/0 - 7/247 of Sindupatti-Nattamangalam road (Using plastic waste)including upkeeping for a period of 60 months</td>
+                                          <td>O-6333</td>
+                                          <td>75.080</td>
+                                          <td>82.0</td>
+                                          <td>82.0</td>
+                                          <td>75.08</td>
+                                          <td>14.01.2020  -    13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>7</th>
+                                          <td>Improvements to Riding Quality at km 0/0 - 3/2 of Vagurani road branching from km 32/4 of Vathalakundu-Peraiyur road (Using plastic waste) including upkeeping for a period of 60\nmonths</td>
+                                          <td>O-7435</td>
+                                          <td>3.200</td>
+                                          <td>69.0</td>
+                                          <td>69.0</td>
+                                          <td>61.59</td>
+                                          <td>14.01.2020      13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>8</th>
+                                          <td>Improvements to Riding Quality at km 0/0 -1/0 of Kalluthu-Seemanuthu road branching from km 23/2 of Vathalakundu-Peraiyur road including upkeeping for a period of 60 months</td>
+                                          <td>O-1873</td>
+                                          <td>1.000</td>
+                                          <td>22.0</td>
+                                          <td>22.0</td>
+                                          <td>20.32</td>
+                                          <td>14.01.2020 -     13.07.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th></th>
+                                          <td><h3>Total</h3></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td><h3>637.00</h3></td>
+                                          <td><h3>637.00</h3></td>
+                                          <td><h3>570.78</h3></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <th>10</th>
+                                          <td><h3>CRIDP 2019-20 ( Package -80 ) (Cont: M/s MBM Builders)</h3></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <th>11</th>
+                                          <td>Strengthening of Kovilankulam-Thimmanatham road at km 4/2 - 6/0 Re-Construction culvert  including upkeeping for a period of 60 months</td>
+                                          <td>O-3171</td>
+                                          <td>1.800</td>
+                                          <td>98.0</td>
+                                          <td>98.0</td>
+                                          <td>89.38</td>
+                                          <td>12.02.2020 -     11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>12</th>
+                                          <td>Strengthening of Valandur-Pappapatti road at km 0/0 - 3/0 including upkeeping for a period of 60 months</td>
+                                          <td>O-7479</td>
+                                          <td>3.000</td>
+                                          <td>124.0</td>
+                                          <td>124.0</td>
+                                          <td>111.30</td>
+                                          <td>12.02.2020 -     11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>13</th>
+                                          <td>Strengthening of Valandur-Pappapatti road at km 3/0 - 5/0 including Re-Construction culvert including upkeeping for a period of 60 months</td>
+                                          <td>O-7479</td>
+                                          <td>2.000</td>
+                                          <td>103.0</td>
+                                          <td>103.0</td>
+                                          <td>90.76</td>
+                                          <td>12.02.2020 -     11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>14</th>
+                                          <td>Strengthening of Allikundam-Rajakkapatti road branching from km 34/6 of Vathalakundu-Peraiyur road at km 0/0 - 1/0 including Re-Construction culvert including upkeeping for a period of 60 months</td>
+                                          <td>O-147</td>
+                                          <td>1.000</td>
+                                          <td>52.0</td>
+                                          <td>52.0</td>
+                                          <td>46.82</td>
+                                          <td>12.02.2020 -     11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>15</th>
+                                          <td>Improvements to Riding Quality at km 2/0 -4/8 of K.Paraipatti-Mayakurumbanpatti road (Using plastic waste) including upkeeping for a period of 60 months</td>
+                                          <td>O-1680</td>
+                                          <td>2.800</td>
+                                          <td>58.0</td>
+                                          <td>58.0</td>
+                                          <td>53.69</td>
+                                          <td>12.02.2020 -     11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>16</th>
+                                          <td>Improvements to Riding Quality at km 1/0 -4/087 of Chellampatti-Thidiyan road including upkeeping for a period of 60 months</td>
+                                          <td>O-840</td>
+                                          <td>3.087</td>
+                                          <td>67.0</td>
+                                          <td>67.0</td>
+                                          <td>59.18</td>
+                                          <td>12.02.2020  -    11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>17</th>
+                                          <td>Improvements to Riding Quality at km 0/0 -1/0 of K.Paraipatti road branching from km 20/4 of Madurai-Theni road including upkeeping for a period of 60 months</td>
+                                          <td>O-1681</td>
+                                          <td>1.000</td>
+                                          <td>22.0</td>
+                                          <td>22.0</td>
+                                          <td>19.66</td>
+                                          <td>12.02.2020   -   11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>18</th>
+                                          <td>Improvements to Riding Quality at km 11/0 -12/6 of Kovilankulam-Thimmanatham road including upkeeping for a period of 60 months</td>
+                                          <td>O-3171</td>
+                                          <td>1.600</td>
+                                          <td>36.0</td>
+                                          <td>36.0</td>
+                                          <td>31.59</td>
+                                          <td>12.02.2020   -   11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th>19</th>
+                                          <td>Improvements to Riding Quality at km 0/0 -2/4 of V.Perumalpatti road branching from km 26/6 of Vathalakundu-Peraiyur road including upkeeping for a period of 60 months</td>
+                                          <td>O-7336</td>
+                                          <td>2.400</td>
+                                          <td>53.0</td>
+                                          <td>53.0</td>
+                                          <td>46.46</td>
+                                          <td>12.02.2020  -    11.08.2020</td>
+                                        </tr>
+                                        <tr>
+                                          <th></th>
+                                          <td><h3>Total</h3></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td><h3>613.00</h3></td>
+                                          <td><h3>613.00</h3></td>
+                                          <td><h3>548.84</h3></td>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                  <div class="container-fluid px-4">
+                      <div class="d-flex align-items-center justify-content-between small">
+                          <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                          <div>
+                              <a href="#">Privacy Policy</a>
+                              &middot;
+                              <a href="#">Terms &amp; Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
+          </div>
+    
+      <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+          })
+          </script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+      <script src="assets/demo/chart-area-demo.js"></script>
+      <script src="assets/demo/chart-bar-demo.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+      <script src="js/datatables-simple-demo.js"></script>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>List of Road</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+    </head>
+    <body class="sb-nav-fixed">
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Usilampatti Highways</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Index</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Login
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseRoadData" aria-expanded="false" aria-controls="collapseRoadData">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Road Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseRoadData" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                              <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="ListOfRoad.html">List of Roads</a>
+                                <a class="nav-link" href="CulvertList.html">List of All CD Structures</a>
+                                <a class="nav-link" href="MinorBridge.html">List of Bridges</a>
+                                <a class="nav-link" href="PipeCulvert.html">List of Pipe Culverts</a>
+                                <a class="nav-link" href="BoxCulvert.html">List of Box Culverts</a>
+                                <a class="nav-link" href="CutStone.html">List of Cut Stone Slab Culverts</a>
+                                <a class="nav-link" href="Causeway.html">List of Causeways</a>
+                            </nav>
+                                                    
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Projects
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjects" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                  <a class="nav-link" href="index.html">2022-23 CRIDP Works</a>
+                                  <a class="nav-link" href="index.html">2022-23 SR Works</a>
+                                  <a class="nav-link" href="mannadimangalam.html">Mannadimangalam Bridge work</a>
+                                  <a class="nav-link" href="index.html">Hot Spot I</a>
+                                  <a class="nav-link" href="index.html">Road Safety Works</a> 
+                                  <a class="nav-link" href="index.html">Maintece 2023-24 Works</a> 
+                                </nav>
+                                                    
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProposals" aria-expanded="false" aria-controls="collapseProposals">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Proposals
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProposals" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Hot Spot II</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Curve Improvement</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>
+                                    <a class="nav-link" href="mannadimangalam.html"></a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a> 
+                                    <a class="nav-link" href="layout-sidenav-light.html"></a>  
+                                </nav>
+                                                    
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                      <h1 class="mt-4">LIST OF ROADS</h1>
+                        
+                        
+                        <div class="row">
+                            <div class="card mb-4 shadow">
+                                
+                                <div class="card-body">
+                                    <table id="datatablesSimple">
+                                        <thead>
+                                            <tr>
+                                              <th>Sl.no</th>
+                                              <th>Category</th>
+                                              <th>Road_No</th>
+                                              <th>Name of road</th>
+                                              <th>Start</th>
+                                              <th>End</th>
+                                              <th>Length</th>
+                                            </tr>
+                                          </thead>
+                                            
+                                        <tfoot>
+                                            <tr>
+                                                <th>Sl.no</th>
+                                                <th>Category</th>
+                                                <th>Road_No</th>
+                                                <th>Name of road</th>
+                                                <th>Start</th>
+                                                <th>End</th>
+                                                <th>Length</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+          
+                                                <td>1</td>
+                                                
+                                                <td>SH</td>
+                                                <td>SH-154</td>
+                                                <td>Vathalagundu- Peraiyur- Kariyapatti -Thiruchuli- Kamuthi- Sayalkudi road  (SH-154)</td>
+                                                <td>14.400</td>
+                                                <td>37.000</td>
+                                                <td>22.600</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>2</td>
+                                                
+                                                <td>SH</td>
+                                                <td>SH-73A</td>
+                                                <td>Thirumangalam- Usilampatti road Km 12/8- 26/0 (SH- 73-A)</td>
+                                                <td>12.800</td>
+                                                <td>26.075</td>
+                                                <td>13.275</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>3</td>
+                                                
+                                                <td>MDR</td>
+                                                <td>MDR-104</td>
+                                                <td>Elumalai road</td>
+                                                <td>0.000</td>
+                                                <td>12.800</td>
+                                                <td>12.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>4</td>
+                                                
+                                                <td>MDR</td>
+                                                <td>MDR-613</td>
+                                                <td>Kokkulam- Uthappanaickanur road</td>
+                                                <td>0.000</td>
+                                                <td>29.200</td>
+                                                <td>29.200</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>5</td>
+                                               
+                                                <td>MDR</td>
+                                                <td>MDR-721</td>
+                                                <td>Thummakundu- Olaipatti road Km 8/312- 19/827 (MDR-721)</td>
+                                                <td>8.312</td>
+                                                <td>18.927</td>
+                                                <td>10.615</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>6</td>
+                                                
+                                                <td>MDR</td>
+                                                <td>MDR-954</td>
+                                                <td>Chithalai- Thidiyan road ( Via Vagaikulam, Munduvelanpatti- Valagankulam) (MDR- 954)</td>
+                                                <td>17.000</td>
+                                                <td>19.000</td>
+                                                <td>2.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>7</td>
+                                                
+                                                <td>MDR</td>
+                                                <td>MDR-961</td>
+                                                <td>Padeeswaran- Pannikundu road</td>
+                                                <td>0.000</td>
+                                                <td>2.600</td>
+                                                <td>2.600</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>8</td>
+                                              
+                                                <td>ODR</td>
+                                                <td>O-7089</td>
+                                                <td>Thummakundu - Nalluthevanpatti road</td>
+                                                <td>0.000</td>
+                                                <td>11.357</td>
+                                                <td>11.357</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>9</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-3171</td>
+                                                <td>Kovilankulam - Thimmanatham road</td>
+                                                <td>4.200</td>
+                                                <td>13.800</td>
+                                                <td>9.600</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>10</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-7479</td>
+                                                <td>Valandur - Pappapatti road</td>
+                                                <td>0.000</td>
+                                                <td>7.880</td>
+                                                <td>7.880</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>11</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-6333</td>
+                                                <td>Sindupatti - Nattamangalam road</td>
+                                                <td>0.000</td>
+                                                <td>7.048</td>
+                                                <td>7.048</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>12</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-10271</td>
+                                                <td>Uthappanaicakanur to Kupplipatti  Road</td>
+                                                <td>2.000</td>
+                                                <td>5.800</td>
+                                                <td>3.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>13</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-1237</td>
+                                                <td>Edayapatti- Duraisamypurampudur  road</td>
+                                                <td>0.000</td>
+                                                <td>5.000</td>
+                                                <td>5.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>14</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-1680</td>
+                                                <td>K.Paraipatti - Mayakurumbanpatti road</td>
+                                                <td>0.000</td>
+                                                <td>4.800</td>
+                                                <td>4.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>15</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-2918</td>
+                                                <td>Kodaginaickanpatti - Melathirumanickam road</td>
+                                                <td>0.000</td>
+                                                <td>4.645</td>
+                                                <td>4.645</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>16</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-147</td>
+                                                <td>Alligundam - Rajakkapatti road branching road Km 34/6 of Vathalakundu -Peraiyur road</td>
+                                                <td>0.000</td>
+                                                <td>4.600</td>
+                                                <td>4.600</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>17</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-804</td>
+                                                <td>Pasukkaranpatti - Kakkiveeranpatti road</td>
+                                                <td>0.000</td>
+                                                <td>4.200</td>
+                                                <td>4.200</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>18</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-840</td>
+                                                <td>Chellampatti -Thidiyan road</td>
+                                                <td>1.000</td>
+                                                <td>4.087</td>
+                                                <td>3.087</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>19</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-472</td>
+                                                <td>Ariyapatti - Paluthupatti road</td>
+                                                <td>0.000</td>
+                                                <td>3.895</td>
+                                                <td>3.895</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>20</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-4376</td>
+                                                <td>Nattapatti - Kondampatti road</td>
+                                                <td>0.000</td>
+                                                <td>3.720</td>
+                                                <td>3.720</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>21</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-3878</td>
+                                                <td>Melaperumalkovilpatti - Perugamanallur road</td>
+                                                <td>0.000</td>
+                                                <td>3.323</td>
+                                                <td>3.323</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>22</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7435</td>
+                                                <td>Vagurani road branching from Km 32/4 of Vathalakundu-Peraiyur - Kariyapatti road</td>
+                                                <td>0.000</td>
+                                                <td>3.200</td>
+                                                <td>3.200</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>23</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-2198</td>
+                                                <td>Kattakaruppanpatti road branching from Km 34/8 of Madurai-Theni road</td>
+                                                <td>0.000</td>
+                                                <td>2.800</td>
+                                                <td>2.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>24</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-1854</td>
+                                                <td>Kallapatti road branching from Km 22/2 of Thirumangalam-Usilampatti road toKm 0/0- 2/8</td>
+                                                <td>0.000</td>
+                                                <td>2.800</td>
+                                                <td>2.800</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>25</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-4354</td>
+                                                <td>Nariyampatti road branching from Km 12/8 of Kokkulam- Uthappanaickanur road 0/0- 2/6</td>
+                                                <td>0.000</td>
+                                                <td>2.600</td>
+                                                <td>2.600</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>26</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-7336</td>
+                                                <td>V.Perumalpatti road branching from Km 26/6 of Vathalakundu - Peraiyur - Kariapatti road</td>
+                                                <td>0.000</td>
+                                                <td>2.400</td>
+                                                <td>2.400</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>27</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-1873</td>
+                                                <td>Kalluthu- Seemanuthu road branching from Km 23/2 of  Vathalakundu-Periayur - Kariapatti road</td>
+                                                <td>0.000</td>
+                                                <td>2.200</td>
+                                                <td>2.200</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>28</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-6871</td>
+                                                <td>Thimmanatham - Lingappanaickanur road Km 0/0- 2/020</td>
+                                                <td>0.000</td>
+                                                <td>2.020</td>
+                                                <td>2.020</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>29</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7090</td>
+                                                <td>Thummalapatti road branching from Allikundam - Rajakkapatti road</td>
+                                                <td>0.000</td>
+                                                <td>2.000</td>
+                                                <td>2.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>30</td>
+                                               
+                                                <td>ODR</td>
+                                                <td>O-786</td>
+                                                <td>Boothipuram road branching from Km 36/2 of Madurai -Theni road</td>
+                                                <td>0.000</td>
+                                                <td>2.000</td>
+                                                <td>2.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>31</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-805</td>
+                                                <td>Pasukkaranpatt - Kakkiveeranpatti road to Sirupatti road</td>
+                                                <td>0.000</td>
+                                                <td>2.000</td>
+                                                <td>2.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>32</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-10273</td>
+                                                <td>Perumalkovilpatty to Periyapalarpatty Road</td>
+                                                <td>0.000</td>
+                                                <td>2.000</td>
+                                                <td>2.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>33</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7600</td>
+                                                <td>Vathalakundu - Peraiyur - Kariyapatti  road to Meikkilarpatti road (Via) Vadakattupatti road</td>
+                                                <td>0.000</td>
+                                                <td>1.800</td>
+                                                <td>1.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>34</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7415</td>
+                                                <td>Vadugapatti road branching from Km 36/8 of Madurai- Theni road Km 0/0-1/8</td>
+                                                <td>0.000</td>
+                                                <td>1.800</td>
+                                                <td>1.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>35</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-2311</td>
+                                                <td>Keelapatti road Km 0/0- 1/6</td>
+                                                <td>0.000</td>
+                                                <td>1.600</td>
+                                                <td>1.600</td>
+                                              </tr>
+                                              <tr>
+                                               
+                                                <td>36</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-3455</td>
+                                                <td>Madurai - Theni road to E.Pudupatti (Via) Ambasamuthuram road</td>
+                                                <td>0.000</td>
+                                                <td>1.600</td>
+                                                <td>1.600</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>37</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-6931</td>
+                                                <td>Thirumangalam - Pallapatti  road to  Panniyan road</td>
+                                                <td>0.000</td>
+                                                <td>1.600</td>
+                                                <td>1.600</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>38</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-282</td>
+                                                <td>Andipatti road branching from Km 7/2 of Kovilankulam- Thimmanatham road</td>
+                                                <td>0.000</td>
+                                                <td>1.400</td>
+                                                <td>1.400</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>39</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-10270</td>
+                                                <td>Veerapandi - Vinnakudi  Road</td>
+                                                <td>0.000</td>
+                                                <td>1.020</td>
+                                                <td>1.020</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>40</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7313</td>
+                                                <td>Uthappanaickanur - Peranai road</td>
+                                                <td>7.800</td>
+                                                <td>8.800</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>41</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-1674</td>
+                                                <td>Jothilnaickanur road branching from Km 8/0  of Elumalai road</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>42</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-5394</td>
+                                                <td>Pudukottai- Mupidarpatti road Km 0/0- 1/0</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>43</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7063</td>
+                                                <td>Thottapanaickanur road branching from Km 46/8 of Madurai- Theni road</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>44</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-1681</td>
+                                                <td>K.Paraipatti road branching from Km 20/4 of Madurai -Theni road</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>45</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-3094</td>
+                                                <td>Koppilipatti - Pappapatti road</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>46</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-10272</td>
+                                                <td>Pasukkaranpatty  Road   Km 0/0- 1/0.</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>47</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-10269</td>
+                                                <td>Chellampatti- Vikkiramangalam road to Vadugapatti Road</td>
+                                                <td>0.000</td>
+                                                <td>1.000</td>
+                                                <td>1.000</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>48</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-806</td>
+                                                <td>Pasukkaranpatti - V.Kamatchipuram road Km 0/0- 0/9</td>
+                                                <td>0.000</td>
+                                                <td>0.900</td>
+                                                <td>0.900</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>49</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-661</td>
+                                                <td>Ayyanarkulam road branching from Km  8/2 of Kovilankulam -  Thimmanatham road</td>
+                                                <td>0.000</td>
+                                                <td>0.800</td>
+                                                <td>0.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>50</td>
+                                                
+                                                <td>ODR</td>
+                                                <td>O-7311</td>
+                                                <td>Uthappanaickanur - Koppilipatti road to Mondikundu road</td>
+                                                <td>0.000</td>
+                                                <td>0.800</td>
+                                                <td>0.800</td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td>51</td>
+                                                
+                                                <td>SCR</td>
+                                                <td>O-7842</td>
+                                                <td>Vikkiramangalam - Nathampatti road Km 0/0- 10/300</td>
+                                                <td>0.000</td>
+                                                <td>10.300</td>
+                                                <td>10.300</td>
+                                              </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+      
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+              return new bootstrap.Popover(popoverTriggerEl)
+            })
+            </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        </div>
+    </body>
+  
+</html>
