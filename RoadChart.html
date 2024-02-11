@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Highways</title>
+     
+    <!--<link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />-->
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    
+    <!--<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    
+    
+</head>
+        
+    <body>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #00A4B4; border-bottom: #e8491d 3px solid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Highways</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link"  href="index.html">Home</a>
+              <a class="nav-link" href="GO_09_240124.pdf" target="_blank">GO</a>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+      <div class="p-4" style="background-color: #008AD8; border-bottom: #e8491d 3px solid">
+        <h3 class="text-decoration-underline">Road Chart </h3>
+      </div>
+      <style type="text/css">
+       td:nth-child(3) {
+        text-align: right;
+       }
+       td:nth-child(4) {
+        text-align: right;
+       }
+       td:nth-child(5) {
+        text-align: right;
+       }
+       td:nth-child(1) {
+        text-align: center;
+       }
+       
+      </style>
+      <div class="table-responsive pt-3"  style="border-bottom: #e8491d 3px solid">
+<table id="datatablesSimple" class="table table-bordered table-hover">
+  <thead>
+    <tr>
+    <th>Road_No</th>
+    <th>Name of road</th>
+    <th>Start_KM</th>
+    <th>End_KM</th>
+    <th>Length (KM)</th>
+    <th>Stretch</th>
+    <th>Year</th>
+    <th>Scheme</th>
+    <th>Started Year</th>
+    <th>Completed Year</th>
+    <th>Work Type</th>
+    <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>14.4</td>
+    <td>24</td>
+    <td>9.6</td>
+    <td>KM 14/0 - 24/0</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>24</td>
+    <td>25</td>
+    <td>1</td>
+    <td>KM 24/0 - 25/0</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>25</td>
+    <td>26</td>
+    <td>1</td>
+    <td>KM 25/0 - 26/0</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>26</td>
+    <td>27</td>
+    <td>1</td>
+    <td>KM 26/0 - 27/0</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>27</td>
+    <td>30</td>
+    <td>3</td>
+    <td>KM 27/0 - 30/0</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>30</td>
+    <td>34</td>
+    <td>4</td>
+    <td>KM 30/0 - 34/0</td>
+    <td>CRIDP 2015-16</td>
+    <td>CRIDP</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>34</td>
+    <td>35.6</td>
+    <td>1.60</td>
+    <td>KM 34/0 - 35/6</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-154</td>
+    <td>Peraiyur Road</td>
+    <td>35.6</td>
+    <td>37</td>
+    <td>1.40</td>
+    <td>KM 35/6 - 37/0</td>
+    <td>CRIDP 2015-16</td>
+    <td>CRIDP</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-73A</td>
+    <td>TMM-Usilampatti road</td>
+    <td>12.8</td>
+    <td>15</td>
+    <td>2.20</td>
+    <td>KM 12/8 - 15/0</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-73A</td>
+    <td>TMM-Usilampatti road</td>
+    <td>15</td>
+    <td>18</td>
+    <td>3</td>
+    <td>KM 15/0 - 18/0</td>
+    <td>CRIDP 2015-16</td>
+    <td>CRIDP</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-73A</td>
+    <td>TMM-Usilampatti road</td>
+    <td>18</td>
+    <td>21</td>
+    <td>3</td>
+    <td>KM 18/0 - 21/0</td>
+    <td>SRPR 2015-16</td>
+    <td>SRPR</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>IRQP</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-73A</td>
+    <td>TMM-Usilampatti road</td>
+    <td>21</td>
+    <td>23</td>
+    <td>2</td>
+    <td>KM 21/0 - 23/0</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>SH-73A</td>
+    <td>TMM-Usilampatti road</td>
+    <td>23</td>
+    <td>26</td>
+    <td>3</td>
+    <td>KM 23/0 - 26/0</td>
+    <td>CRIDP 2016-17</td>
+    <td>CRIDP</td>
+    <td>2016</td>
+    <td>2017</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>1</td>
+    <td>5</td>
+    <td>4</td>
+    <td>KM 1/0 - 5/0</td>
+    <td>CRIDP 2021-22</td>
+    <td>CRIDP</td>
+    <td>2021</td>
+    <td>2022</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>5</td>
+    <td>7</td>
+    <td>2</td>
+    <td>KM 5/0 - 7/0</td>
+    <td>CRIDP 2020-21</td>
+    <td>CRIDP</td>
+    <td>2020</td>
+    <td>2021</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>7</td>
+    <td>10.6</td>
+    <td>3.60</td>
+    <td>KM 7/0 - 10/6</td>
+    <td>CRIDP 2022-23</td>
+    <td>CRIDP</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>10.6</td>
+    <td>11</td>
+    <td>0.40</td>
+    <td>KM 10/6 - 11/0</td>
+    <td>CRIDP 2020-21</td>
+    <td>CRIDP</td>
+    <td>2020</td>
+    <td>2021</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>11</td>
+    <td>12.6</td>
+    <td>1.60</td>
+    <td>KM 11/0 - 12/6</td>
+    <td>SRPR 2022-23</td>
+    <td>SRPR</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-104</td>
+    <td>Elumalai road </td>
+    <td>12.6</td>
+    <td>12.8</td>
+    <td>0.20</td>
+    <td>KM 12/6 - 12/8</td>
+    <td>SRPR 2020-21</td>
+    <td>SRPR</td>
+    <td>2020</td>
+    <td>2021</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-721</td>
+    <td>Olaipatti road</td>
+    <td>8.312</td>
+    <td>18.927</td>
+    <td>10.615</td>
+    <td>KM 8/312 - 18/615</td>
+    <td>CRIDP 2023-24</td>
+    <td>CRIDP</td>
+    <td>2023</td>
+    <td>2024</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-613</td>
+    <td>Kokkulam- Uthappanaickanur road </td>
+    <td>0</td>
+    <td>0.2</td>
+    <td>0.2</td>
+    <td>KM 0/0 - 0/2</td>
+    <td>CRIDP 2015-16</td>
+    <td>CRIDP</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>MDR-613</td>
+    <td>Kokkulam- Uthappanaickanur road </td>
+    <td>0.2</td>
+    <td>2</td>
+    <td>1.8</td>
+    <td>KM 0/2 - 2/0</td>
+    <td>CRIDP 2021-22</td>
+    <td>CRIDP</td>
+    <td>2021</td>
+    <td>2022</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-613</td>
+    <td>Kokkulam- Uthappanaickanur road </td>
+    <td>2</td>
+    <td>7.6</td>
+    <td>5.6</td>
+    <td>KM 2/0 - 7/6</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-613</td>
+    <td>Kokkulam- Uthappanaickanur road </td>
+    <td>7.6</td>
+    <td>21</td>
+    <td>13.4</td>
+    <td>KM 7/6 - 21/0</td>
+    <td>CRF 2017-18</td>
+    <td>CRF</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Wdg &amp; Stg</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>MDR-613</td>
+    <td>Kokkulam- Uthappanaickanur road </td>
+    <td>21</td>
+    <td>23</td>
+    <td>2</td>
+    <td>KM 21/0 - 23/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-613</td>
+    <td>Kokkulam- Uthappanaickanur road </td>
+    <td>23</td>
+    <td>29.2</td>
+    <td>6.20</td>
+    <td>KM 23/0 - 29/2</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-721</td>
+    <td>Thum-Ulaipatti road</td>
+    <td>8.312</td>
+    <td>18.927</td>
+    <td>10.615</td>
+    <td>KM 8/312 - 18/615</td>
+    <td>CRIDP 2023-24</td>
+    <td>CRIDP</td>
+    <td>2023</td>
+    <td>2024</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-961</td>
+    <td>Padees-Pannikundu</td>
+    <td>0</td>
+    <td>2.6</td>
+    <td>2.6</td>
+    <td>KM 0/0 - 2/6</td>
+    <td>SRPR 2023-24</td>
+    <td>SRPR</td>
+    <td>2023</td>
+    <td>2024</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>MDR-954</td>
+    <td>Chithalai-Thidiyan</td>
+    <td>17</td>
+    <td>19.2</td>
+    <td>2.20</td>
+    <td>KM 17/0 - 19/2</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7089</td>
+    <td>Thumm-Nalluthevanpatti road</td>
+    <td>0</td>
+    <td>0.8</td>
+    <td>0.8</td>
+    <td>KM 0/0 - 0/8</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7089</td>
+    <td>Thumm-Nalluthevanpatti road</td>
+    <td>0.8</td>
+    <td>3.4</td>
+    <td>2.60</td>
+    <td>KM 0/8 - 3/4</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7089</td>
+    <td>Thumm-Nalluthevanpatti road</td>
+    <td>3.4</td>
+    <td>4.6</td>
+    <td>1.20</td>
+    <td>KM 3/4 - 4/6</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7089</td>
+    <td>Thumm-Nalluthevanpatti road</td>
+    <td>4.6</td>
+    <td>6</td>
+    <td>1.40</td>
+    <td>KM 4/6 - 6/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7089</td>
+    <td>Thumm-Nalluthevanpatti road</td>
+    <td>6</td>
+    <td>9.4</td>
+    <td>3.40</td>
+    <td>KM 6/0 - 9/4</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7089</td>
+    <td>Thumm-Nalluthevanpatti road</td>
+    <td>9.4</td>
+    <td>11.357</td>
+    <td>1.957</td>
+    <td>KM 9/4 - 11/357</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-3171</td>
+    <td>Kovilankulam-Thimmanatham</td>
+    <td>4.2</td>
+    <td>6</td>
+    <td>1.80</td>
+    <td>KM 4/2 - 6/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-3171</td>
+    <td>Kovilankulam-Thimmanatham</td>
+    <td>6</td>
+    <td>11</td>
+    <td>5</td>
+    <td>KM 6/0 - 11/0</td>
+    <td>CRIDP 2022-23</td>
+    <td>CRIDP</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-3171</td>
+    <td>Kovilankulam-Thimmanatham</td>
+    <td>11</td>
+    <td>12.6</td>
+    <td>1.60</td>
+    <td>KM 11/0 - 12/6</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-3171</td>
+    <td>Kovilankulam-Thimmanatham</td>
+    <td>12.6</td>
+    <td>13.8</td>
+    <td>1.20</td>
+    <td>KM 12/6 - 13/8</td>
+    <td>SRPR 2019-20</td>
+    <td>SRPR</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>IRQP</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7479</td>
+    <td>Valandur-Pappapatti</td>
+    <td>0</td>
+    <td>5</td>
+    <td>5</td>
+    <td>KM 0/0 - 5/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7479</td>
+    <td>Valandur-Pappapatti</td>
+    <td>5</td>
+    <td>7</td>
+    <td>2</td>
+    <td>KM 5/0 - 7/0</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7479</td>
+    <td>Valandur-Pappapatti</td>
+    <td>7</td>
+    <td>7.6</td>
+    <td>0.60</td>
+    <td>KM 7/0 - 7/6</td>
+    <td>SRPR 2019-20</td>
+    <td>SRPR</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>IRQP</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-6333</td>
+    <td>Sindhupatti-Nattamangalam</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-6333</td>
+    <td>Sindhupatti-Nattamangalam</td>
+    <td>1</td>
+    <td>3</td>
+    <td>2</td>
+    <td>KM 1/0 - 3/0</td>
+    <td>CRIDP 2023-24</td>
+    <td>CRIDP</td>
+    <td>2023</td>
+    <td>2024</td>
+    <td>Wdg &amp; Stg</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-6333</td>
+    <td>Sindhupatti-Nattamangalam</td>
+    <td>3</td>
+    <td>4</td>
+    <td>1</td>
+    <td>KM 3/0 - 4/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-6333</td>
+    <td>Sindhupatti-Nattamangalam</td>
+    <td>4</td>
+    <td>5</td>
+    <td>1</td>
+    <td>KM 4/0 - 5/0</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-6333</td>
+    <td>Sindhupatti-Nattamangalam</td>
+    <td>5</td>
+    <td>7.248</td>
+    <td>2.248</td>
+    <td>KM 5/0 - 7/248</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-1237</td>
+    <td>Edayapatti-Duraisamipurampudur</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-1237</td>
+    <td>Edayapatti-Duraisamipurampudur</td>
+    <td>1</td>
+    <td>5</td>
+    <td>4</td>
+    <td>KM 1/0 - 5/0</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-1680</td>
+    <td>K.Paraipatti-Mayakurumbanpatti</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>KM 0/0 - 2/0</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-1680</td>
+    <td>K.Paraipatti-Mayakurumbanpatti</td>
+    <td>2</td>
+    <td>4.8</td>
+    <td>2.8</td>
+    <td>KM 2/0 - 4/8</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-2918</td>
+    <td>Kodanginaickenpatti-Melathirumanic</td>
+    <td>0</td>
+    <td>4.645</td>
+    <td>4.645</td>
+    <td>KM 0/0 - 4/645</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-147</td>
+    <td>Allikundam-Rajakkapatti</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-147</td>
+    <td>Allikundam-Rajakkapatti</td>
+    <td>1</td>
+    <td>4.6</td>
+    <td>3.60</td>
+    <td>KM 1/0 - 4/6</td>
+    <td>CRIDP 2021-22</td>
+    <td>CRIDP</td>
+    <td>2021</td>
+    <td>2022</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-804</td>
+    <td>Pasukaranpatti-Kakkiveeranpatti</td>
+    <td>0</td>
+    <td>1.6</td>
+    <td>1.6</td>
+    <td>KM 0/0 - 1/6</td>
+    <td>CRIDP 2022-23</td>
+    <td>CRIDP</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>Wdg &amp; Stg</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-804</td>
+    <td>Pasukaranpatti-Kakkiveeranpatti</td>
+    <td>1.6</td>
+    <td>2.2</td>
+    <td>0.60</td>
+    <td>KM 1/6 - 2/2</td>
+    <td>CRIDP 2016-17</td>
+    <td>CRIDP</td>
+    <td>2016</td>
+    <td>2017</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-804</td>
+    <td>Pasukaranpatti-Kakkiveeranpatti</td>
+    <td>2.2</td>
+    <td>3.4</td>
+    <td>1.20</td>
+    <td>KM 2/2 - 3/4</td>
+    <td>SRPR 2017-18</td>
+    <td>SRPR</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-804</td>
+    <td>Pasukaranpatti-Kakkiveeranpatti</td>
+    <td>3.4</td>
+    <td>4.2</td>
+    <td>0.80</td>
+    <td>KM 3/4 - 4/2</td>
+    <td>CRIDP 2016-17</td>
+    <td>CRIDP</td>
+    <td>2016</td>
+    <td>2017</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-840</td>
+    <td>Chellampatti-Thidiyan</td>
+    <td>1</td>
+    <td>4.087</td>
+    <td>3.087</td>
+    <td>KM 1/0 - 4/087</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-472</td>
+    <td>Ariyapatti-Paluthupatti</td>
+    <td>0</td>
+    <td>4.065</td>
+    <td>4.065</td>
+    <td>KM 0/0 - 4/065</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-4376</td>
+    <td>Nattapatti-Kondampatti</td>
+    <td>0</td>
+    <td>3.72</td>
+    <td>3.72</td>
+    <td>KM 0/0 - 3/372</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-3878</td>
+    <td>Mela-Perungamanallur</td>
+    <td>0</td>
+    <td>3.323</td>
+    <td>3.323</td>
+    <td>KM 0/0 - 3/323</td>
+    <td>CRIDP 2017-18</td>
+    <td>CRIDP</td>
+    <td>2017</td>
+    <td>2018</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7435</td>
+    <td>Vagurani Road</td>
+    <td>0</td>
+    <td>3.2</td>
+    <td>3.2</td>
+    <td>KM 0/0 - 3/2</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-2198</td>
+    <td>Kattakaruppanpatti Road</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>SRPR 2020-21</td>
+    <td>SRPR</td>
+    <td>2020</td>
+    <td>2021</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-2198</td>
+    <td>Kattakaruppanpatti Road</td>
+    <td>1</td>
+    <td>2.8</td>
+    <td>1.80</td>
+    <td>KM 1/0 - 2/8</td>
+    <td>SRPR 2022-23</td>
+    <td>SRPR</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-1854</td>
+    <td>Kallapatti road</td>
+    <td>0</td>
+    <td>2.8</td>
+    <td>2.8</td>
+    <td>KM 0/0 - 2/8</td>
+    <td>PMGSY 2016-17</td>
+    <td>PMGSY</td>
+    <td>2016</td>
+    <td>2017</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-4354</td>
+    <td>Nariampatti road</td>
+    <td>0</td>
+    <td>2.6</td>
+    <td>2.6</td>
+    <td>KM 0/0 - 2/6</td>
+    <td>SRPR 2022-23</td>
+    <td>SRPR</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7336</td>
+    <td>V.Perumalpatti road</td>
+    <td>0</td>
+    <td>2.4</td>
+    <td>2.4</td>
+    <td>KM 0/0 - 2/4</td>
+    <td>CRIDP 2016-17</td>
+    <td>CRIDP</td>
+    <td>2016</td>
+    <td>2017</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-1873</td>
+    <td>Kalluthu-Seemanuthu road</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>CRIDP 2019-20</td>
+    <td>CRIDP</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-1873</td>
+    <td>Kalluthu-Seemanuthu road</td>
+    <td>1</td>
+    <td>2.2</td>
+    <td>1.20</td>
+    <td>KM 1/0 - 2/2</td>
+    <td>CRIDP 2022-23</td>
+    <td>CRIDP</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-6871</td>
+    <td>Thimmanatham-Lingappanaickanur</td>
+    <td>0</td>
+    <td>1.6</td>
+    <td>1.6</td>
+    <td>KM 0/0 - 1/6</td>
+    <td>SRPR 2022-23</td>
+    <td>SRPR</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-6871</td>
+    <td>Thimmanatham-Lingappanaickanur</td>
+    <td>1.6</td>
+    <td>2.02</td>
+    <td>0.42</td>
+    <td>KM 1/6 - 2/020</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7090</td>
+    <td>Thummalapatti road</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>KM 0/0 - 2/0</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-786</td>
+    <td>Boothipuram road</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>KM 0/0 - 2/0</td>
+    <td>CRIDP 2021-22</td>
+    <td>CRIDP</td>
+    <td>2021</td>
+    <td>2022</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-805</td>
+    <td>Pasu-Kakki to Sirupatti road</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>KM 0/0 - 2/0</td>
+    <td>SRPR 2022-23</td>
+    <td>SRPR</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-7415</td>
+    <td>Vadugapatti road</td>
+    <td>0</td>
+    <td>1.2</td>
+    <td>1.2</td>
+    <td>KM 0/0 - 1/2</td>
+    <td>SRPR 2019-20</td>
+    <td>SRPR</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>IRQP</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7415</td>
+    <td>Vadugapatti road</td>
+    <td>1.2</td>
+    <td>1.8</td>
+    <td>0.60</td>
+    <td>KM 1/2 - 1/8</td>
+    <td>Before 2015-16</td>
+    <td>Eligible</td>
+    <td>2015</td>
+    <td>2016</td>
+    <td>undefined</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-7600</td>
+    <td>Meikilarpatti road</td>
+    <td>0</td>
+    <td>1.8</td>
+    <td>1.8</td>
+    <td>KM 0/0 - 1/8</td>
+    <td>SRPR 2022-23</td>
+    <td>SRPR</td>
+    <td>2022</td>
+    <td>2023</td>
+    <td>IRQP</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-2311</td>
+    <td>Keelapatti road</td>
+    <td>0</td>
+    <td>1.6</td>
+    <td>1.6</td>
+    <td>KM 0/0 - 1/6</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-3455</td>
+    <td>Ambasamusram Road</td>
+    <td>0</td>
+    <td>1.6</td>
+    <td>1.6</td>
+    <td>KM 0/0 - 1/6</td>
+    <td>CRIDP 2016-17</td>
+    <td>CRIDP</td>
+    <td>2016</td>
+    <td>2017</td>
+    <td>Strengthening</td>
+    <td>eligible</td>
+</tr>
+<tr>
+    <td>O-6931</td>
+    <td>Panniyan road</td>
+    <td>0</td>
+    <td>1.6</td>
+    <td>1.6</td>
+    <td>KM 0/0 - 1/6</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-282</td>
+    <td>Andipatti road</td>
+    <td>0</td>
+    <td>1.4</td>
+    <td>1.4</td>
+    <td>KM 0/0 - 1/4</td>
+    <td>CRIDP 2018-19</td>
+    <td>CRIDP</td>
+    <td>2018</td>
+    <td>2019</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-10271</td>
+    <td>Uthappanaickanur-Koppilipatti road</td>
+    <td>2</td>
+    <td>5.8</td>
+    <td>3.8</td>
+    <td>KM 2/0 - 5/8</td>
+    <td>Upgrd 2019-20</td>
+    <td>Upgrd</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-10273</td>
+    <td>Perumalkovilpatti-periyapalarpatti</td>
+    <td>0</td>
+    <td>2</td>
+    <td>2</td>
+    <td>KM 0/0 - 2/0</td>
+    <td>Upgrd 2019-20</td>
+    <td>Upgrd</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-10272</td>
+    <td>Pasukkaranpatti road</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>Upgrd 2019-20</td>
+    <td>Upgrd</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-10270</td>
+    <td>Veerapandi-Vinnakkudi road</td>
+    <td>0</td>
+    <td>1.02</td>
+    <td>1.02</td>
+    <td>KM 0/0 - 1/02</td>
+    <td>Upgrd 2019-20</td>
+    <td>Upgrd</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+</tr>
+<tr>
+    <td>O-10269</td>
+    <td>Chell-Vikkir to Vadugapatti road</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>KM 0/0 - 1/0</td>
+    <td>Upgrd 2019-20</td>
+    <td>Upgrd</td>
+    <td>2019</td>
+    <td>2020</td>
+    <td>Strengthening</td>
+    <td>Not Eligible</td>
+    </tr>
+  </tbody>
+  
+</table>
+      </div>
+    </body>
+    <footer class="py-4 mt-auto" style="background-color: #003399">
+      <div class="container-fluid px-4">
+          <div class="d-flex align-items-center justify-content-between small">
+              <div class="text-white">Copyright &copy; Your Website 2023</div>
+              <div>
+                  <a href="#">Privacy Policy</a>
+                  &middot;
+                  <a href="#">Terms &amp; Conditions</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+</html>
