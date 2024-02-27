@@ -9,6 +9,28 @@
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
 </head>
 <body>
+    
+    <div class="container">
+    	<h2 class="text-center mt-4 mb-4">Select File to Upload</h2>
+    	<div class="card">
+    		<div class="card-header"><b>Select Any File</b></div>
+    		<div class="card-body">
+    			
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload Image" name="submit">
+                </form>
+
+    		</div>
+    	</div>
+        
+    </div>
+
+
+
+
+
     <div class="container">
     	<h2 class="text-center mt-4 mb-4">Convert Excel to HTML Table using JavaScript</h2>
     	<div class="card">
