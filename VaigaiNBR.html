@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Vaigai North Bank Road</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="thispage" class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color: #00A4B4">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Usilampatti Highways</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Index</div>
+                            <a class="nav-link" href="#thispage">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Work Detail
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Login
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <!--<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>-->
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#estimate" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Estimate Details
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#estimate">Name of Work</a>
+                                    <a class="nav-link" href="#estimate">Estimate Cost</a>
+                                    <a class="nav-link" href="#estimate">Sub Estimate</a>
+                                    <a class="nav-link" href="#estimate">LS Provisons</a>
+                                                                      
+                                </nav>
+                                                    
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#agreement" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Agreement Details
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjects" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#agreement">Agreement Details</a>
+                                    <a class="nav-link" href="#agreemnet">Work Progress</a>
+                                       
+                                </nav>
+                                                    
+                            </div>
+                            <a class="nav-link collapsed" href="#land" data-bs-toggle="collapse" data-bs-target="#landaqu" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Land Acquisition Details
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="landaqu" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#land">Land Acquisition area</a>
+                                    <a class="nav-link" href="#land">Land Acquisition Cost</a>
+                                    <a class="nav-link" href="./assets/Mannadimangalam LA.html">Land Acquisition Details</a>
+                                       
+                                </nav>
+                                                    
+                            </div>
+                            
+                            
+
+                            <!--<div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>-->
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div id="estimate" class="container-fluid px-4 bg-light">
+
+                        <h1 class="mt-2">Mannadimangalam Bridge Detail</h1>
+                        <div  class="col bg-warning p-1 mb-2"><h4>Estimate Details</h4></div>
+                        <div class="row overflow-auto py-4 mb-2" style="height:400px" >
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Name of work</h4>
+                                    <div class="card-text">
+                                        <p>
+                                         Construction of High Level Bridge across Vaigai River between Mannadimangalam at Km 27/10 of Melakkal - Peranai Road (MD 262) and Irumbadi at Km 2/2 of Sholavandan - Karuppatti Road  
+                                        </p>
+                                        <p><i>CRIDP 2020-21</i></p>
+                                        <p><i>CE No.    dt: </i></p>
+                                     
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                           <p><i>G.O.(Ms) No. 71, Highways && Minor Ports (HF2) Department, dated 18.05.2020</i></p>                                           
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Cost Details</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Estimate Amount</td> <td>Rs 1900 L</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Main Bridge</td> <td>Rs 7,16,50,242</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Sub Estimates</td> <td>Rs 5,92,19,259</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total Amount</td> <td>Rs 13,08,69,501</td>
+                                            </tr>
+                                            <tr>
+                                            <td>GST 12%</td> <td>Rs 1,57,19,259</td>
+                                            </tr>
+                                            <tr>
+                                            <td>LS Provisions</td> <td>Rs 4,34,26,159</td>
+                                            </tr>
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Sub Estimates</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Approach Road</td> <td>Rs 1,49,98,296</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Junction Improvement</td> <td>Rs 71,55,237</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Slab Culverts (6 Nos)</td> <td>Rs 1,28,07,369</td>
+                                            </tr>
+                                            <tr>
+                                            <td>RCC Retaining wall</td> <td>Rs 1,73,91,123</td>
+                                            </tr>
+                                            <tr>
+                                            <td>PCC Retaining wall</td> <td>Rs 68,67,234</td>
+                                            </tr>
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >LS Provisions</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Land Acquisition</td> <td>Rs 1,00,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Shifting of Utilities</td> <td>Rs 70,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Pylons</td> <td>Rs 5,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Painting</td> <td>Rs 26,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Lighting Arrangements</td> <td>Rs 50,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Road Furnitures 2%</td> <td>Rs 29,31,477</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Escalation 5%</td> <td>Rs 73,28,692</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Road Safety Audit</td> <td>Rs 10,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Advertisement</td> <td>Rs 5,00,000</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Quality Control 1%</td> <td>Rs 14,65,738</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Labour Welfare Fund 1%</td> <td>Rs 14,65,738</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Contigencies 2.5%</td> <td>Rs 36,34,514</td>
+                                            </tr>
+                                                      
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                                               
+                        </div>
+                        <div id="agreement" class="col bg-warning p-2 mb-2"><h4 >Agreement Details</h4></div>
+                        <div class="row overflow-auto py-4 mb-2" style="height:400px">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Agreement Details</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Contractor</td> <td>M/s S.A.L and Company</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Tender Date</td> <td></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Tender opening</td> <td></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Work Order</td> <td></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Agreement</td> <td>13.07.2022</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Contract Value</td> <td>Rs 15,02,38,186</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Tender %</td> <td>2.5% above ER 2021-22</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Period</td> <td>15 months</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Agt completion Date</td> <td>13.10.2023</td>
+                                            </tr>
+                                            <tr>
+                                            <td>EOT Upto</td> <td></td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Work Progress</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Main Bridge</td> <td>54.75%</td>
+                                            <td><span class="badge bg-success">24.35% Done</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Approach Road</td> <td>11.46%</td>
+                                            <td><span class="badge bg-success">0% Done</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Junction Improvement</td> <td>5.46%</td>
+                                            <td><span class="badge bg-success">0% Done</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Slab Culverts</td> <td>9.79%</td>
+                                            <td><span class="badge bg-success">0% Done</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>RCC Retaining Wall</td> <td>13.29%</td>
+                                            <td><span class="badge bg-success">0% Done</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>PCC Retaining Wall</td> <td>5.525%</td>
+                                            <td><span class="badge bg-success">0% Done</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            
+                                               
+                        </div>
+                        <div id="land" class="col bg-warning p-1 mb-2"><h4 class="mt-1">Land Acquisition Details</h4></div>
+                        <div class="row overflow-auto py-4 mb-2" style="height:400px">
+                        
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Land Acquisition Details</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Total Area</td> <td>15893 Sqm</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Mannadimangalam Village</td> <td>12645 Sqm</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Irumbadi Village</td> <td>3248 Sqm</td>
+                                            </tr>
+                                            <tr>
+                                            <td>By Notification</td> <td>11068 Sqm</td>
+                                            </tr>
+                                            <tr>
+                                            <td>By Private Negotiation</td> <td>4825 Sqm</td>
+                                            </tr>
+                                            
+                                        </table>
+
+                                    </div>
+                                    
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-5 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Land Acquisition Cost</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>By LA Act</td> <td>15 Persons</td> <td>11068 Sqm</td><td>Rs 1,19,94,552.00</td>
+                                            <td><span class="badge bg-success">0% Paid</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>By Private Negotiation</td> <td>6 Persons</td> <td>4825 Sqm</td><td>Rs 1,34,39,470.11</td>
+                                            <td><span class="badge bg-success">51.20% Paid</span></td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total LA Cost</td> <td>21 Persons</td><td>15893 Sqm</td><td>Rs 2,54,34,022.11</td>
+                                            <td><span class="badge bg-success">27.06% Paid</span></td>
+                                            </tr>
+                                            
+                                            
+                                        </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Cost as per LA act (15 Survey Numbers)</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Land Cost</td> <td class="text-end">Rs 10,68,991.14</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Multification factor-1.25</td> <td class="text-end">Rs 13,36,238.93</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Cost of Tree</td> <td class="text-end">Rs 34,94,387.00</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Cost of Buildings</td> <td class="text-end">Rs 10,75,000.00</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total Cost</td> <td class="text-end">Rs 59,05,625.93</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Solatium Amount 100%</td> <td class="text-end">Rs 59,05,625.93</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Interest amount 12% (412 days)</td> <td class="text-end">Rs 1,83,300.39</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total Compensation</td> <td class="text-end">Rs 1,19,94,552.25</td>
+                                            </tr>
+                                            
+                                        </table>
+
+                                    </div>
+                                    
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Cost as per Private Negotiation (6 Survey Numbers)</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Land Cost</td> <td class="text-end">Rs 2,30,670.58</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Agreed Land Cost (275%)</td> <td class="text-end">Rs 6,34,344.09</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Cost of Tree</td> <td class="text-end">Rs 50,33,616.00</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Cost of Buildings</td> <td class="text-end">Rs 25,000.00</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total Cost</td> <td class="text-end">Rs 50,58,616.00</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Solatium Amount 100%</td> <td class="text-end">Rs 50,58,616.00</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total Compensation</td> <td class="text-end">Rs 1,07,51,576.09</td>
+                                            </tr>
+                                            <tr>
+                                            <td>25% Incentive Amount</td> <td class="text-end">Rs 26,87,894.07</td>
+                                            </tr>
+                                            <tr class=" border border-primary" >
+                                            <td>Final Compensation</td> <td class="text-end">Rs 1,34,39,470.11</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+
+                            
+                            
+                                               
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                <h4>Land Acquisition Details</h4>
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                     
+                                          <th>Seq. No.</th>
+                                          <th>Sl.No</th>
+                                          <th>Survey No.</th>
+                                          <th>Total Extent of the lands (Sqm)</th>
+                                          <th>Extent to be Acquired</th>
+                                          <th>Type of Land</th>
+                                          <th>Details of structures</th>
+                                          <th>Details of Trees</th>
+                                          <th>Patta No.</th>
+                                          <th>Details of Owner</th>
+                                          <th>Compensation Amount</th>
+                                          <th>Type of Compensation</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          
+                                          <td></td>
+                                          <td></td>
+                                          <td colspan="2"><h5>Irumbadi Village</h5></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>13</td>
+                                          <td>1</td>
+                                          <td>230</td>
+                                          <td>450 sqm</td>
+                                          <td>125 Sqm</td>
+                                          <td>Wet</td>
+                                          <td>Nil</td>
+                                          <td>Coconut Tree-5</td>
+                                          <td>1052</td>
+                                          <td>
+                                            <div class="accordion">
+                                                <div class="accordion item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item12">
+                                                            4 Beneficiaries
+                                                        </button>
+                                                    </h2> 
+                                                </div>
+                                                <div id="item12" class="collapse" data-bs-parent="#accordion">
+                                                  <div class="accordion-body">
+                                                    1. Chellammal W/o Pandi<br>
+                                                    2. Ramanathan, S/o Pandi<br>
+                                                    3. Vijaya, D/o Pandi<br>
+                                                    4. Manthayan, S/o Pandi   
+                                                  </div>
+                                                </div>
+                                            </div> 
+                                            </td>
+                                          <td></td>
+                                          <td>LA Act</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>14</td>
+                                          <td>2</td>
+                                          <td>232/1A</td>
+                                          <td>5300 Sqm</td>
+                                          <td>697 Sqm</td>
+                                          <td>Dry</td>
+                                          <td>Nil</td>
+                                          <td>
+                                            <div class="accordion">
+                                                <div class="accordion item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item21">
+                                                            80 Trees
+                                                        </button>
+                                                    </h2> 
+                                                </div>
+                                                <div id="item21" class="collapse" data-bs-parent="#accordion">
+                                                  <div class="accordion-body">
+                                                    Coconut Tree-20<br>
+                                                    Young Coconut Tree-1<br>
+                                                    Baa Tree-55<br>
+                                                    Vagai Tree-1<br>
+                                                    Jack Fruit Tree-1<br>
+                                                    Pungai Tree-2
+                                                  </div>
+                                                </div>
+                                            </div>
+                                          </td>
+                                          <td>98</td>
+                                          <td>Sathasivam Pillai, S/o Muthaiya Pillai</td>
+                                          <td></td>
+                                          <td>LA Act</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>17</td>
+                                          <td>3</td>
+                                          <td>259/1</td>
+                                          <td>4650 Sqm</td>
+                                          <td>1730 Sqm</td>
+                                          <td>Wet</td>
+                                          <td>Motor Room-1</td>
+                                          <td>
+                                            <div class="accordion">
+                                                <div class="accordion item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item31">
+                                                            294 Trees
+                                                        </button>
+                                                    </h2> 
+                                                </div>
+                                                <div id="item31" class="collapse" data-bs-parent="#accordion">
+                                                  <div class="accordion-body">
+                                                    Baa Tree-292<br>Young Guava-1<br>Sappotta-1
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            </td>
+                                          <td>1500</td>
+                                          <td>
+                                            <div class="accordion">
+                                                <div class="accordion item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item32">
+                                                            3 Beneficiaries
+                                                        </button>
+                                                    </h2> 
+                                                    <div id="item32" class="collapse " data-bs-parent="#accordion">
+                                                      <div class="accordion-body">
+                                                            1. Prabhu @ Muthuramalingam, S/o Loganathan<br>
+                                                            2. Pasupathi, S/o Loganathan<br>
+                                                            3. Arun @ Natarajamoorthi, S/o Loganathan
+                                                      </div>
+                                                    </div>
+                                                </div> 
+                                              </div>
+                                            </td>
+                                          <td></td>
+                                          <td>LA Act</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>16</td>
+                                          <td>4</td>
+                                          <td>259/2</td>
+                                          <td>550 Sqm</td>
+                                          <td>98 Sqm</td>
+                                          <td>Wet</td>
+                                          <td>
+                                            Urai Kinaru -1<br>
+                                            Well-1
+                                          </td>
+                                          <td>
+                                            <div class="accordion">
+                                            <div class="accordion item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item41">
+                                                        7 Trees
+                                                    </button>
+                                                </h2> 
+                                                <div id="item41" class="collapse" data-bs-parent="#accordion">
+                                                  <div class="accordion-body">
+                                                        1. Coconut Tree - 2<br>
+                                                        2. Teakwood Tree - 5<br>
+                                                  </div>
+                                                </div>
+                                            </div> 
+                                            </div>
+                                          </td>
+                                          <td>1500</td>
+                                          
+                                          <td>
+                                          <div class="accordion">
+                                            <div class="accordion item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item42">
+                                                        3 Beneficiaries
+                                                    </button>
+                                                </h2> 
+                                                <div id="item42" class="collapse " data-bs-parent="#accordion">
+                                                  <div class="accordion-body">
+                                                        1. Prabhu @ Muthuramalingam, S/o Loganathan<br>
+                                                        2. Pasupathi, S/o Loganathan<br>
+                                                        3. Arun @ Natarajamoorthi, S/o Loganathan
+                                                  </div>
+                                                </div>
+                                            </div> 
+                                          </div>
+                                          </td>
+                                          <td></td>
+                                          <td>LA Act</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>18</td>
+                                          <td>5</td>
+                                          <td>310/2</td>
+                                          <td>4700 Sqm</td>
+                                          <td>150 Sqm</td>
+                                          <td>Wet</td>
+                                          <td>Nil</td>
+                                          <td>
+                                            <div class="accordion">
+                                                <div class="accordion item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item51">
+                                                            38 Trees
+                                                        </button>
+                                                    </h2> 
+                                                    <div id="item51" class="collapse " data-bs-parent="#accordion">
+                                                      <div class="accordion-body">
+                                                        Coconut tree-3<br>Young Coconut-3<br>Baa Tree-32    
+                                                      </div>
+                                                    </div>
+                                                </div> 
+                                              </div>
+                                            </td>
+                                          <td>1209</td>
+                                          <td>Muthupandi, S/o Thiyagarajan</td>
+                                          <td>Rs 7,25,664</td>
+                                          <td>Private Negotiation</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>19</td>
+                                          <td>6</td>
+                                          <td>310/3</td>
+                                          <td>3500 Sqm</td>
+                                          <td>310 Sqm</td>
+                                          <td>Wet</td>
+                                          <td>Nil</td>
+                                          <td>Coconut tree-3<br>Baa Tree-35</td>
+                                          <td>222</td>
+                                          <td>Panjavarnam, W/o Murugan</td>
+                                          <td>Rs 11,21,989</td>
+                                          <td>Private Negotiation</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td>15</td>
+                                          <td>7</td>
+                                          <td>311/2</td>
+                                          <td>2550 Sqm</td>
+                                          <td>138 Sqm</td>
+                                          <td>Wet</td>
+                                          <td>Nil</td>
+                                          <td>Coconut Tree-2</td>
+                                          <td>640</td>
+                                          <td>1. V. Guruvammal, W/o Veera Ambalam<br>2. Paramasamy, S/o Chinnasami</td>
+                                          <td></td>
+                                          <td>LA Act</td>
+                                        </tr>
+                                        <tr>
+                                          
+                                          <td></td>
+                                          <td></td>
+                                          <td>Total Area</td>
+                                          <td></td>
+                                          <td>3248 Sqm</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+                        
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
