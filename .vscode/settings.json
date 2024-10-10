@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/VaigaiNBR.html"
+    "livePreview.defaultPreviewPath": "/VaigaiNBR.html",
+    "liveServer.settings.port": 5501
 }
