@@ -1,0 +1,2407 @@
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths nivo-lightbox-notouch" style="overflow-y: hidden;"><!--<![endif]--><head>
+
+
+
+    <!-- Basic -->
+    
+    <title>Lakshmi School, Madurai, Tamilnadu,ICSE,ISC</title>
+    
+    
+    
+    <!-- Define Charset -->
+    
+    <meta charset="utf-8">
+    
+    
+    
+    <!-- Responsive Metatag -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+    
+    <!-- Page Description and Author -->
+    
+    <meta name="description" content="Lakshmi School ICSE, Madurai, Tamilnadu, India">
+    
+    
+    
+    <!-- Bootstrap CSS  -->
+    
+    <link rel="stylesheet" href="https://www.lakshmischool.org/bootstrap/css/bootstrap.min.css" type="text/css" media="screen">
+    
+    
+    
+    <!-- Font Awesome CSS -->
+    
+    <link rel="stylesheet" href="https://www.lakshmischool.org/css/font-awesome.min.css" type="text/css" media="screen">
+    
+    
+    
+    <!-- Venue CSS Styles  -->
+    
+    <link rel="stylesheet" type="text/css" href="https://www.lakshmischool.org/css/style.css" media="screen">
+    
+    
+    
+    <!-- Revolution Slider CSS Styles  -->
+    
+    <link href="https://www.lakshmischool.org/css/settings.css" rel="stylesheet" type="text/css" media="screen">
+    
+    
+    
+    <!-- Responsive CSS Styles  -->
+    
+    <link rel="stylesheet" type="text/css" href="https://www.lakshmischool.org/css/responsive.css" media="screen">
+    
+    
+    
+    <!-- Css3 Transitions Styles  -->
+    
+    <link rel="stylesheet" type="text/css" href="https://www.lakshmischool.org/css/animate.css" media="screen">
+    
+    
+    
+    <!-- Color CSS Styles  -->
+    
+    <link rel="stylesheet" type="text/css" href="https://www.lakshmischool.org/css/colors/blue.css" title="blue" media="screen">
+    
+    
+    
+    <!--Adding plugin css file -->
+    
+    <link rel="stylesheet" type="text/css" href="https://www.lakshmischool.org/css/breaking-news-ticker.min.css" title="blue" media="screen">
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="https://www.lakshmischool.org/css/breaking-news-ticker.min.css" title="blue" media="screen">
+    
+    <link rel="stylesheet" href="https://www.lakshmischool.org/css/lobibox.css">
+    
+    
+    
+    <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    
+    
+    <style>
+    
+    .navbar-brand
+    
+    {
+    
+        margin:0px!important;
+    
+        padding:0px!important;
+    
+    }
+    
+    .bgImgCenter{
+    
+        background-image:url(images/logo.png);
+    
+        background-repeat: no-repeat;
+    
+        background-position: center; 
+    
+        position: relative;
+    
+    }
+    
+    .white-text { color:#FFFFFF!important; }
+    
+    
+    </style>
+    
+    </head>
+    
+    
+    
+    <body>
+    
+    
+    
+    <!-- Full Body Container -->
+    
+    <div id="container"> 
+    
+        
+    
+        <!-- Start Header Section -->
+    
+        <div class="hidden-header" style="height: 113px;"></div>
+    
+    
+    
+    <header class="clearfix"> 
+    
+    
+    
+    
+    
+    
+    
+        <!-- Start Top Bar -->
+    
+    
+    
+        <div class="top-bar" style="display: block;">
+    
+    
+    
+            
+    
+    
+    
+            <div class="container">
+    
+    
+    
+                <div class="row">
+    
+    
+    
+                    <div class="col-md-3 text-left">
+    
+    
+    
+                        <ul class="contact-details">
+    
+    
+    
+                            <li><a href="#"><strong class="accent-color">(Affiliated to CISCE, New Delhi)</strong></a></li>
+    
+    
+    
+                        </ul>
+    
+    
+    
+                    </div>
+    
+    
+    
+                    <div class="col-md-9 text-right"> 
+    
+    
+    
+                        <!-- Start Contact Info -->
+    
+    
+    
+                        <ul class="contact-details">						
+    
+                            <!--<li><a href="general/contest/" title="Result of the contest">Results of the contest</a></li> -->
+    
+    
+    
+                            <li><a href="#"><i class="fa fa-phone"></i> 98434 65255</a> </li>
+    
+    
+    
+                            <li><a href="#"><i class="fa fa-envelope-o"></i> lakshmischool@tvslvs.com</a> </li>
+    
+    
+    
+                            <li><a href="https://www.lakshmischool.org/general/contactus/">Contact Us</a> </li>
+    
+    
+    
+                            
+    
+    
+    
+                        </ul>
+    
+    
+    
+                        <!-- End Contact Info -->
+    
+    
+    
+                    </div>
+    
+    
+    
+                    <!-- .col-md-6 -->
+    
+    
+    
+                    <!--<div class="col-md-6"> 
+    
+    
+    
+                        <ul class="social-list">
+    
+    
+    
+                            <li> <a class="facebook" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a> </li>
+    
+    
+    
+                            <li> <a class="twitter" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a> </li>
+    
+    
+    
+                            <li> <a class="google" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a> </li>
+    
+    
+    
+                            <li> <a class="dribbble" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a> </li>
+    
+    
+    
+                            <li> <a class="linkdin" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a> </li>
+    
+    
+    
+                            <li> <a class="flickr" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a> </li>
+    
+    
+    
+                            <li> <a class="tumblr" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a> </li>
+    
+    
+    
+                        </ul>
+    
+    
+    
+                    </div>-->
+    
+    
+    
+                    <!-- .col-md-6 --> 
+    
+    
+    
+                </div>
+    
+    
+    
+                <!-- .row --> 
+    
+    
+    
+            </div>
+    
+    
+    
+            <!-- .container --> 
+    
+    
+    
+        </div>
+    
+    
+    
+        <!-- .top-bar --> 
+    
+    
+    
+        <!-- End Top Bar --> 
+    
+    
+    
+        
+    
+    
+    
+        <!-- Start  Logo & Naviagtion  -->
+    
+    
+    
+        <div class="navbar navbar-default navbar-top">
+    
+    
+    
+            
+    
+    
+    
+            <div class="container">
+    
+    
+    
+                <div class="navbar-header">
+    
+    
+    
+                    <!-- Stat Toggle Nav Link For Mobiles -->
+    
+    
+    
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    
+    
+    
+                        <i class="fa fa-bars"></i>
+    
+    
+    
+                    </button>
+    
+    
+    
+                    <a class="navbar-brand" href="#" style="padding-top: 27px; padding-bottom: 27px;">
+    
+    
+    
+                    <img class="inline pull-left img-rounded" src="https://www.lakshmischool.org/images/logo.png" oncontextmenu="return false;" alt="Lakshmi School" style="margin-left:-35px;">
+    
+    
+    
+                    </a>
+    
+    
+    
+                </div>
+    
+    
+    
+                <div class="navbar-collapse collapse navbar-left"> 
+    
+    
+    
+                    <!-- Start Navigation List -->
+    
+    
+    
+                    <ul class="nav navbar-nav" style="margin-top:20px;">
+    
+    
+    
+                        <li> <a class="active" href="https://www.lakshmischool.org/general/home/" style="padding-top: 0px; padding-bottom: 0px;">Home</a> </li>
+    
+    
+    
+                        <li class="drop"> <a href="https://www.lakshmischool.org/general/aboutus/" style="padding-top: 0px; padding-bottom: 0px;">About Us</a>
+    
+    
+    
+                            <ul class="dropdown">
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/history/">History</a> </li>
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/committee/">Committee Members</a> </li>
+    
+    
+    
+                            </ul>
+    
+    
+    
+                        </li>
+    
+    
+    
+                        <li class="drop"> <a href="#" style="padding-top: 0px; padding-bottom: 0px;">Curriculum</a>
+    
+    
+    
+                            <ul class="dropdown">
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/academic/">Academic</a> </li>
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/cocurricular/">Co Curricular</a> </li>
+    
+    
+    
+                            </ul>
+    
+    
+    
+                        </li>
+    
+    
+    
+                        <li class="drop"> <a href="#" style="padding-top: 0px; padding-bottom: 0px;">Examination</a>
+    
+    
+    
+                            <ul class="dropdown">
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/evalsystem/">Evaluation System</a> </li>
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/examresults/">Board Exam Result</a> </li>
+    
+    
+    
+                            </ul>
+    
+    
+    
+                        </li>
+                        
+                        <li><a href="https://lakshmi.lvsschools.com/stauth/" target="_blank" style="padding-top: 0px; padding-bottom: 0px;"><b>Student Login</b></a></li>
+                        <li><a href="https://www.lakshmischool.org/general/features/" style="padding-top: 0px; padding-bottom: 0px;">Special Features</a> </li>
+    
+    
+    
+                        
+    
+                        <li><a href="https://www.lakshmischool.org/lsaa/home/" target="_blank" style="padding-top: 0px; padding-bottom: 0px;">&nbsp;<b>Alumni</b></a></li>
+    
+                        <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=833183" target="_blank" style="padding-top: 0px; padding-bottom: 0px;"><b>Online Fee Payment</b></a></li>
+                    
+                        <li class="drop"> <a href="#" style="padding-top: 0px; padding-bottom: 0px;">Awards</a>
+    
+    
+    
+                            <ul class="dropdown">
+    
+    
+    
+                                <li><a href="https://www.lakshmischool.org/general/endowment/">Endowment Awards </a></li>
+    
+    
+    
+                                <li><a href="#">Proficiency Awards</a>
+    
+    
+    
+                                    <ul class="sup-dropdown">
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2023-24.pdf" target="_blank">2023-24</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2022-23.pdf" target="_blank">2022-23</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2019-20.pdf" target="_blank">2019-20</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2018-19.pdf" target="_blank">2018-19</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2017-18.pdf" target="_blank">2017-18</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2016-17.pdf" target="_blank">2016-17</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2015-16.pdf" target="_blank">2015-16</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2014-15.pdf" target="_blank">2014-15</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2013-14.pdf" target="_blank">2013-14</a></li>
+                                        <li><a href="https://www.lakshmischool.org/downloads/proficiency_award_2012-13.pdf" target="_blank">2012-13</a></li>
+                                    </ul>
+    
+    
+    
+                                </li>
+    
+    
+    
+                            </ul>
+    
+    
+    
+                        </li>
+    
+    
+    
+                        <li> <a href="https://www.lakshmischool.org/general/gallery/" style="padding-top: 0px; padding-bottom: 0px;">Gallery</a></li>
+    
+    
+    
+                        <li class="drop"> <a href="#" style="padding-top: 0px; padding-bottom: 0px;">Publications</a>
+    
+    
+    
+                            <ul class="dropdown">
+    
+    
+    
+                            <li><a href="#">Textra Mail</a>
+    
+    
+    
+                                <ul class="sup-dropdown">
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e25.pdf" target="_blank">Edition 25</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e24.pdf" target="_blank">Edition 24</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e23.pdf" target="_blank">Edition 23</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e22.pdf" target="_blank">Edition 22</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e21.pdf" target="_blank">Edition 21</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e20.pdf" target="_blank">Edition 20</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e19.pdf" target="_blank">Edition 19</a></li>			
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e18.pdf" target="_blank">Edition 18</a></li>			
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e17.pdf" target="_blank">Edition 17</a></li>			
+                                    <li><a href="https://www.lakshmischool.org/downloads/textra-e16.pdf" target="_blank">Edition 16</a></li>
+                                </ul>
+    
+    
+    
+                            </li>
+    
+    
+    
+                            <li><a href="#">Lakshmi Darpan</a>
+    
+    
+    
+                                <ul class="sup-dropdown">
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2024.pdf" target="_blank">Oct 2024</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-mar2024.pdf" target="_blank">Mar 2024</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2023.pdf" target="_blank">Oct 2023</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-mar2023.pdf" target="_blank">Mar 2023</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2022.pdf" target="_blank">Oct 2022</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-apr2022.pdf" target="_blank">Apr 2022</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2021.pdf" target="_blank">Oct 2021</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-mar2021.pdf" target="_blank">Mar 2021</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2020.pdf" target="_blank">Oct 2020</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-mar2020.pdf" target="_blank">Mar 2020</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2019.pdf" target="_blank">Oct 2019</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-mar2019.pdf" target="_blank">Mar 2019</a></li>
+                                    <li><a href="https://www.lakshmischool.org/downloads/lakshmidarpan-oct2018.pdf" target="_blank">Oct 2018</a></li>
+    
+    
+    
+                                </ul>
+    
+    
+    
+                            </li>
+    
+    
+    
+                            </ul>
+    
+    
+    
+                        </li>
+    
+    
+    
+    
+    
+                    </ul>
+    
+    
+    
+                    <!-- End Navigation List --> 
+    
+    
+    
+                </div>
+            </div>
+        </div>
+        <!-- End Header Logo & Naviagtion -->        
+    </header>
+        <!-- End Header Section --> 
+    
+    
+    
+        <!-- Start Home Page Slider -->
+    
+        <section id="home">
+    
+            <div class="slider-1_container">
+    
+                <div class="slider-1_wrapper" style="overflow: visible;">
+    
+                    <div class="slider-1 revslider revslider-initialised tp-simpleresponsive" id="revslider-421" style="height: 34px;">
+    
+                        <ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
+    
+                            <!-- THE FIRST SLIDE -->
+    
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);"> 
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/pm-memento.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 79.3333px; height: 34px; position: absolute; left: -14.5px; top: 0px; opacity: 0;"></div>
+    
+                            </li>
+                            
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 20; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);"> 
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/pm-students.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 79.3333px; height: 34px; position: absolute; left: -14.5px; top: 0px; opacity: 1;"></div>
+    
+                            </li>
+                            
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);"> 
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/1.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 80.5263px; height: 34px; position: absolute; left: -15.5px; top: 0px; opacity: 0;"></div>
+    
+                            </li>
+    
+    
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);"> 
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/5.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 52.638px; height: 34px; position: absolute; left: -1.5px; top: 0px; opacity: 0;"></div>
+    
+                            </li>
+    
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);">
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/6.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 64.6764px; height: 34px; position: absolute; left: -7.5px; top: 0px; opacity: 0;"></div>
+    
+                            </li>
+    
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);">
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/7.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 70.446px; height: 34px; position: absolute; left: -10px; top: 0px; opacity: 0;"></div>
+    
+                            </li>
+    
+                            <li data-transition="papercut" data-slotamount="7" data-masterspeed="300" style="width: 100%; height: 100%; overflow: hidden; visibility: visible; left: 0px; top: 0px; z-index: 18; opacity: 1; position: absolute; transform: scale(1, 1) translate(0px, 0px) rotate(0deg);">
+    
+                                <!-- MAIN IMAGE -->
+    
+                                <div class="slotholder"><img src="https://www.lakshmischool.org/images/8.jpg" data-fullwidthcentering="on" alt="background" class="defaultimg" style="width: 138.305px; height: 34px; position: absolute; left: -44px; top: 0px; opacity: 0;"></div>
+    
+                            </li>
+    
+                        </ul>
+    
+                    <div class="tp-loader" style="display: none;"></div><div class="tp-bannertimer" style="visibility: hidden; width: 71.2105%; overflow: hidden;"></div></div>
+    
+                <div style="position: absolute; top: 224px; margin-top: -26px; left: 25px;" class="tp-leftarrow tparrows default"></div><div style="position: absolute; top: 224px; margin-top: -26px; right: 25px;" class="tp-rightarrow tparrows default"></div></div>
+    
+            </div>
+    
+    <!-- *********************** -->
+    
+    <div class="bn-breaking-news bn-effect-scroll bn-direction-ltr" id="newsTicker1" style="height: 40px; line-height: 38px; border-radius: 2px; border-width: 1px;">
+    
+        <div class="bn-label" style="display: none;">NEWS</div>
+    
+        <div class="bn-news" style="left: 0px; right: 90px;">
+    
+            <ul style="width: 778px; margin-left: -499px;">
+    
+                    
+    
+                <li>Dear Parents,The first-term holidays start from 23rd October 2024, and the school will reopen on 4th November 2024.</li>
+    
+                
+            </ul>
+    
+        </div>
+    
+        <div class="bn-controls">
+    
+            <button><span class="bn-arrow bn-prev"></span></button>
+    
+            <button><span class="bn-action bn-pause"></span></button>
+    
+            <button><span class="bn-arrow bn-next"></span></button>
+    
+        </div>
+    
+    </div>
+    
+    <!-- *********************** -->
+    
+    
+    
+        </section>
+    
+        <!-- End Home Page Slider --> 
+    
+        
+    
+        <!-- Start Content -->
+    
+        <div id="content">       
+    
+      
+    
+            <!-- Start Services Section -->
+    
+            <!--<div class="container"> 
+    
+                <div class="row">
+    
+                    <div class="col-md-12"> 
+    
+                        <div class="big-title">
+    
+                            <h1>Lakshmi Vidya Sangham <span class="accent-color"> (LVS) </span></h1>
+    
+                            <p class="title-desc">We Make Your Smile</p>
+    
+                        </div>
+    
+                                
+    
+                                <div class="panel-body" align="justify"><img class="img-thumbnail image-text" style="float:left; width:180px;" alt="" src="images/lvs-logo.png" />
+    
+                                            <strong class="accent-color">Lakshmi Vidya Sangham (LVS) </strong> is a trust run by members of the TVS family. TVS Higher Secondary School and Primary School at Jaihindapuram, TVS Matriculation Higher Secondary School at TVS Nagar, Lakshmi School at Veerapanchan, Lakshmi Matriculation School at Veerapanchan are run by LVS. The aim of LVS is to provide quality education to the students enrolled in its schools.</div>							
+    
+                                
+    
+                                            
+    
+                    </div>
+    
+                </div>
+    
+            </div>-->
+    
+            <!-- .container --> 
+    
+            <div class="hr1 margin-top"></div>
+    
+    
+    
+            <div class="container">
+    
+                <div class="page-content">
+    
+                    <div class="row">
+    
+                        <div class="col-md-7">
+    
+                        
+    
+                            <!-- Classic Heading -->
+    
+                            <h4 class="classic-title">
+    
+                                <span>Why Choose Us?</span>
+    
+                            </h4>
+    
+                            
+    
+                            <!-- Some Text -->
+    
+                            <p align="justify">Lakshmi School promises a relaxed environment for learning. It boasts of a pristine surrounding. The green canopy dotted with golden shower trees laden with yellow blossoms and temple trees with pink and white flowers, set the ambience for a happy schooling. The imposing infrastructure is complemented by a team of friendly and motivated staff. The ICSE and ISC curriculum offers scope for creativity and out -of -box thinking. Through a rich curriculum, pupils are groomed to be confident, compassionate and competent citizens of the world. </p>
+    
+                            <p align="justify">“ At Lakshmi School, we follow an innovative curriculum, to provide overall development of children rather than remain textbook centric. Here, the learning process is a joyful experience. “ </p>
+    
+                        </div>
+    
+                        <div class="col-md-5">
+    
+                        
+    
+                            <!-- Start Touch Slider -->
+    
+                            <div class="touch-slider owl-carousel owl-theme" data-slider-navigation="true" data-slider-pagination="true" style="opacity: 1; display: block;"><div id="progressBar"><div id="bar" style="width: 47.8571%;"></div></div>
+    
+                                
+                                <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 560px; left: 0px; display: block; transition: 500ms; transform: translate3d(-240px, 0px, 0px);"><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/63cf6-WhatsApp-Image-2024-09-11-at-14.27.35--1-.jpeg"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/a4bfd-DSC_7497.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/536f0-WhatsApp-Image-2024-09-01-at-19.28.15.jpeg"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/1948d-DSC_7385.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/8573c-WhatsApp-Image-2024-08-18-at-21.47.07--2-.jpeg"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/b1bcf-WhatsApp-Image-2024-08-18-at-21.47.05--3-.jpeg"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/2ca4d-WhatsApp-Image-2024-08-18-at-21.47.05--2-.jpeg"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/89213-DSC_8103.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/c0cc5-WhatsApp-Image-2024-09-11-at-14.27.27.jpeg"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/f0613-DSC_8129.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/74551-DSC_8179.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/08789-_Z1A2224.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/3260e-_Z1A2204.JPG"></div></div><div class="owl-item" style="width: 20px;"><div class="item"><img class="img-thumbnail" alt="" src="https://www.lakshmischool.org/assets/uploads/banner/0e968-_Z1A2052.JPG"></div></div></div></div>
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+                                
+    
+                                
+    
+    
+                            <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+    
+                            <!-- End Touch Slider -->
+    
+                            
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            
+    
+            <!-- End Services Section --> 
+    
+            <div class="hr1 margin-40"></div>
+    
+    
+    
+            <div class="testimonial-area pt-110 pb-105 text-center">
+    
+                <div class="container">
+    
+                    <div class="row">
+    
+                        <div class="col-md-2"></div>
+    
+                        <div class="col-md-5">
+    
+                        <div class="big-title text-center">
+    
+                                <h1><span class="accent-color">VISION</span></h1>
+    
+                                <p class="title-desc" style="color:#FFFFFF;font-size:28px;line-height:40px;">Confident, Competent and Compassionate citizens through value based quality education. </p>
+    
+                       </div>
+    
+                       </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            
+    
+            <div class="container">
+    
+                <div class="page-content">
+    
+                    <div class="hr1 margin-40"></div>
+    
+    <style type="text/css">
+    
+    .testimonial-area {
+    
+        background: url(images/vision.png);
+    
+        background-position-x: 0%;
+    
+        background-position-y: 0%;
+    
+        background-repeat: repeat;
+    
+        background-attachment: scroll;
+    
+        background-size: auto;
+    
+        background-size: cover;
+    
+        background-repeat: no-repeat;
+    
+        background-position: center center;
+    
+        background-attachment: fixed;
+    
+        position: relative;
+    
+    }
+    
+    .success-area {
+    
+        background: url(images/success.jpeg);
+    
+        background-position-x: 0%;
+    
+        background-position-y: 0%;
+    
+        background-repeat: repeat;
+    
+        background-attachment: scroll;
+    
+        background-size: auto;
+    
+        background-size: cover;
+    
+        background-repeat: no-repeat;
+    
+        background-position: center center;
+    
+        background-attachment: fixed;
+    
+        position: relative;
+    
+    }
+    
+    .pb-105 {
+    
+        padding-bottom: 105px;
+    
+    }
+    
+    .pt-110 {
+    
+        padding-top: 110px;
+    
+    }
+    
+    .text-center {
+    
+        text-align: center;
+    
+    }
+    
+                    </style>
+    
+            
+    
+                    
+    
+                    
+    
+                    <div class="row">
+    
+                        
+    
+    
+    
+                        <!-- Start Big Heading -->
+    
+                        <div class="big-title text-center">
+    
+                            <h1><span class="accent-color">Mission</span></h1>
+    
+                            <p class="title-desc">The School shall endeavour to </p>
+    
+                        </div>
+    
+                        <!-- End Big Heading -->
+    
+    
+    
+                        <div class="col-md-4">
+    
+                            <!-- Start Service Icon 1 -->
+    
+                            <div class="service-box service-icon-right">
+    
+                                <div class="service-icon">
+    
+                                    <i class="fa fa-trophy icon-mini-effect icon-effect-1"></i>
+    
+                                </div>
+    
+                                <div class="service-content">
+    
+    
+    
+                                    <p>Draw out the best in each child and provide opportunities to bloom in the process of experiencing joyful learning.</p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <!-- End Service Icon 1 -->
+    
+                            
+    
+                            <!-- Start Service Icon 1 -->
+    
+                            <div class="service-box service-icon-right">
+    
+                                <div class="service-icon">
+    
+                                    <i class="fa fa-trophy icon-mini-effect icon-effect-1"></i>
+    
+                                </div>
+    
+                                <div class="service-content">
+    
+                                    <p>Strive for academic brilliance and facilitate individual allround excellence.</p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <!-- End Service Icon 1 -->
+    
+    
+    
+                            <!-- Start Service Icon 1 -->
+    
+                            <div class="service-box service-icon-right">
+    
+                                <div class="service-icon">
+    
+                                    <i class="fa fa-trophy icon-mini-effect icon-effect-1"></i>
+    
+                                </div>
+    
+                                <div class="service-content">                           
+    
+                                    <p>Impart learning from which results righteousness</p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <!-- End Service Icon 1 -->
+    
+    
+    
+                            
+    
+                        </div>
+    
+                        
+    
+                        <div class="col-md-4 np">
+    
+                            <!-- Macbook Image -->
+    
+                            <img class="img-thumbnail image-text" alt="" src="https://www.lakshmischool.org/images/mobile.png">
+    
+                        </div>
+    
+                        
+    
+                        <div class="col-md-4">
+    
+                            <!-- Start Service Icon 1 -->
+    
+                            <div class="service-box service-icon-left">
+    
+                                <div class="service-icon">
+    
+                                    <i class="fa fa-trophy icon-mini-effect icon-effect-1"></i>
+    
+                                </div>
+    
+                                <div class="service-content">
+    
+                                    <p>Instil lasting Indian values in the child.</p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <!-- End Service Icon 1 -->
+    
+                            
+    
+                            <!-- Start Service Icon 1 -->
+    
+                            <div class="service-box service-icon-left" style="margin-top:20px;padding-top:40px;">
+    
+                                <div class="service-icon">
+    
+                                    <i class="fa fa-trophy icon-mini-effect icon-effect-1"></i>
+    
+                                </div>
+    
+                                <div class="service-content">
+    
+                                    <p>Spot talent and nurture with patience and perseverance</p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <!-- End Service Icon 1 -->
+    
+    
+    
+                            <!-- Start Service Icon 1 -->
+    
+                            <div class="service-box service-icon-left">
+    
+                                <div class="service-icon">
+    
+                                    <i class="fa fa-trophy icon-mini-effect icon-effect-1"></i>
+    
+                                </div>
+    
+                                <div class="service-content">
+    
+                                    <p>Teach to appreciate the dignity of labour.</p>
+    
+                                </div>
+    
+                            </div>
+    
+                            <!-- End Service Icon 1 -->
+    
+    
+    
+                        </div>
+    
+    
+    
+                    </div>
+    
+                    
+    
+                    
+    
+                </div>
+    
+            </div>
+    
+            
+    
+            <div class="hr1 margin-40"></div>
+    
+    
+    
+            
+    
+            
+    
+            <!-- Start News & Skill Section -->
+    
+            <div class="container">
+    
+                <div class="row">
+    
+                    <div class="col-md-7"> 
+    
+                    
+    
+                        <!-- Classic Heading -->
+    
+                        <h4 class="classic-title"><span>Lakshmi Stars</span></h4>
+    
+                        <div class="latest-news custom-carousel touch-carousel owl-carousel owl-theme" data-appeared-items="1" style="opacity: 1; display: block;"> 
+    
+                            
+    
+                        
+                            
+    
+                            <!-- Start Project Item -->
+    
+                            <div class="owl-wrapper-outer"><div class="owl-wrapper owl-origin" style="width: 240px; left: 0px; display: block; transition: all; transform: translate3d(-60px, 0px, 0px); transform-origin: 70px center; perspective-origin: 70px center;"><div class="owl-item" style="width: 20px;"><div class="portfolio-item item">
+    
+                                <div class="portfolio-border"> 
+    
+                                    <!-- Start Project Thumb -->
+    
+                                    <div class="portfolio-thumb"> 
+    
+                                       <a class="lightbox" title="Harini, Class X" href="https://www.lakshmischool.org/assets/uploads/achievements/cec922d93731c561fb83ee4ec24a325c.jpg">
+    
+                                           <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+    
+                                            <img alt="" src="https://www.lakshmischool.org/assets/uploads/achievements/cec922d93731c561fb83ee4ec24a325c.jpg"> 
+    
+                                       </a>
+    
+                                    </div>
+    
+                                    <!-- End Project Thumb --> 
+    
+                                    <!-- Start Project Details -->
+    
+                                    <div class="portfolio-details">
+    
+                                        <div class="latest-news"> 
+    
+                                            <!-- Post 1 -->
+    
+                                            <div class="post-row">
+    
+                                                <h4 class="post-title">
+    
+                                                  <a href="#">Harini, Class X</a> 
+    
+                                                </h4>
+    
+                                                <div class="post-content">
+    
+                                                    <p>She won the Bronze medal in CISCE National Rifle Shooting Tournament and also selected for SGFI.</p>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- End Project Details --> 
+    
+                                </div>
+    
+                            </div></div><div class="owl-item" style="width: 20px;"><div class="portfolio-item item">
+    
+                                <div class="portfolio-border"> 
+    
+                                    <!-- Start Project Thumb -->
+    
+                                    <div class="portfolio-thumb"> 
+    
+                                       <a class="lightbox" title="Velan, Class XII" href="https://www.lakshmischool.org/assets/uploads/achievements/849e35c03f71691c15602ef403ce1eb8.jpg">
+    
+                                           <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+    
+                                            <img alt="" src="https://www.lakshmischool.org/assets/uploads/achievements/849e35c03f71691c15602ef403ce1eb8.jpg"> 
+    
+                                       </a>
+    
+                                    </div>
+    
+                                    <!-- End Project Thumb --> 
+    
+                                    <!-- Start Project Details -->
+    
+                                    <div class="portfolio-details">
+    
+                                        <div class="latest-news"> 
+    
+                                            <!-- Post 1 -->
+    
+                                            <div class="post-row">
+    
+                                                <h4 class="post-title">
+    
+                                                  <a href="#">Velan, Class XII</a> 
+    
+                                                </h4>
+    
+                                                <div class="post-content">
+    
+                                                    <p>He won the gold medal in CISCE National Rifle Shooting Tournament and also selected for SGFI.</p>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- End Project Details --> 
+    
+                                </div>
+    
+                            </div></div><div class="owl-item owl-goDown-out" style="width: 20px; position: relative; left: 20px;"><div class="portfolio-item item">
+    
+                                <div class="portfolio-border"> 
+    
+                                    <!-- Start Project Thumb -->
+    
+                                    <div class="portfolio-thumb"> 
+    
+                                       <a class="lightbox" title="Abhiudai &amp; Abhijai, Class XII" href="https://www.lakshmischool.org/assets/uploads/achievements/88e975fe413fa6bb83cd21fb1b17ee87.jpg">
+    
+                                           <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+    
+                                            <img alt="" src="https://www.lakshmischool.org/assets/uploads/achievements/88e975fe413fa6bb83cd21fb1b17ee87.jpg"> 
+    
+                                       </a>
+    
+                                    </div>
+    
+                                    <!-- End Project Thumb --> 
+    
+                                    <!-- Start Project Details -->
+    
+                                    <div class="portfolio-details">
+    
+                                        <div class="latest-news"> 
+    
+                                            <!-- Post 1 -->
+    
+                                            <div class="post-row">
+    
+                                                <h4 class="post-title">
+    
+                                                  <a href="#">Abhiudai &amp; Abhijai, Class XII</a> 
+    
+                                                </h4>
+    
+                                                <div class="post-content">
+    
+                                                    <p>They won the gold medal in CISCE National Badminton Tournament and also selected for SGFI.</p>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- End Project Details --> 
+    
+                                </div>
+    
+                            </div></div><div class="owl-item owl-goDown-in" style="width: 20px;"><div class="portfolio-item item">
+    
+                                <div class="portfolio-border"> 
+    
+                                    <!-- Start Project Thumb -->
+    
+                                    <div class="portfolio-thumb"> 
+    
+                                       <a class="lightbox" title="Gopika, Class IX" href="https://www.lakshmischool.org/assets/uploads/achievements/bb7250b2274bbe3f4a24cb66df19b1b0.jpg">
+    
+                                           <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+    
+                                            <img alt="" src="https://www.lakshmischool.org/assets/uploads/achievements/bb7250b2274bbe3f4a24cb66df19b1b0.jpg"> 
+    
+                                       </a>
+    
+                                    </div>
+    
+                                    <!-- End Project Thumb --> 
+    
+                                    <!-- Start Project Details -->
+    
+                                    <div class="portfolio-details">
+    
+                                        <div class="latest-news"> 
+    
+                                            <!-- Post 1 -->
+    
+                                            <div class="post-row">
+    
+                                                <h4 class="post-title">
+    
+                                                  <a href="#">Gopika, Class IX</a> 
+    
+                                                </h4>
+    
+                                                <div class="post-content">
+    
+                                                    <p>She won the gold medal in CISCE National Rifle Shooting Tournament and also selected for SGFI.</p>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- End Project Details --> 
+    
+                                </div>
+    
+                            </div></div><div class="owl-item" style="width: 20px;"><div class="portfolio-item item">
+    
+                                <div class="portfolio-border"> 
+    
+                                    <!-- Start Project Thumb -->
+    
+                                    <div class="portfolio-thumb"> 
+    
+                                       <a class="lightbox" title="Kaaviya, Class XII &amp; Mridine Ramakrishnan, Class X" href="https://www.lakshmischool.org/assets/uploads/achievements/7e67ccaec33de6cbd74c1d2c3198e6b6.jpg">
+    
+                                           <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+    
+                                            <img alt="" src="https://www.lakshmischool.org/assets/uploads/achievements/7e67ccaec33de6cbd74c1d2c3198e6b6.jpg"> 
+    
+                                       </a>
+    
+                                    </div>
+    
+                                    <!-- End Project Thumb --> 
+    
+                                    <!-- Start Project Details -->
+    
+                                    <div class="portfolio-details">
+    
+                                        <div class="latest-news"> 
+    
+                                            <!-- Post 1 -->
+    
+                                            <div class="post-row">
+    
+                                                <h4 class="post-title">
+    
+                                                  <a href="#">Kaaviya, Class XII &amp; Mridine Ramakrishnan, Class X</a> 
+    
+                                                </h4>
+    
+                                                <div class="post-content">
+    
+                                                    <p>They won the gold medal in CISCE National Badminton Tournament and also selected for SGFI.</p>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- End Project Details --> 
+    
+                                </div>
+    
+                            </div></div><div class="owl-item" style="width: 20px;"><div class="portfolio-item item">
+    
+                                <div class="portfolio-border"> 
+    
+                                    <!-- Start Project Thumb -->
+    
+                                    <div class="portfolio-thumb"> 
+    
+                                       <a class="lightbox" title="Ms. Lindhiya (ISC 2015 - 16 batch)" href="https://www.lakshmischool.org/assets/uploads/achievements/059ca763c8762bf9aee88a5009c56ef7.jpg">
+    
+                                           <div class="thumb-overlay"><i class="fa fa-arrows-alt"></i></div>
+    
+                                            <img alt="" src="https://www.lakshmischool.org/assets/uploads/achievements/059ca763c8762bf9aee88a5009c56ef7.jpg"> 
+    
+                                       </a>
+    
+                                    </div>
+    
+                                    <!-- End Project Thumb --> 
+    
+                                    <!-- Start Project Details -->
+    
+                                    <div class="portfolio-details">
+    
+                                        <div class="latest-news"> 
+    
+                                            <!-- Post 1 -->
+    
+                                            <div class="post-row">
+    
+                                                <h4 class="post-title">
+    
+                                                  <a href="#">Ms. Lindhiya (ISC 2015 - 16 batch)</a> 
+    
+                                                </h4>
+    
+                                                <div class="post-content">
+    
+                                                    <p>Congratulations to Ms. Lindhiya for clearing the Civil Service Examination
+    </p>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- End Project Details --> 
+    
+                                </div>
+    
+                            </div></div></div></div>
+    
+                            <!-- End Project Item --> 
+    
+                            
+                            
+    
+                            <!-- Start Project Item -->
+    
+                            
+    
+                            <!-- End Project Item --> 
+    
+                            
+                            
+    
+                            <!-- Start Project Item -->
+    
+                            
+    
+                            <!-- End Project Item --> 
+    
+                            
+                            
+    
+                            <!-- Start Project Item -->
+    
+                            
+    
+                            <!-- End Project Item --> 
+    
+                            
+                            
+    
+                            <!-- Start Project Item -->
+    
+                            
+    
+                            <!-- End Project Item --> 
+    
+                            
+                            
+    
+                            <!-- Start Project Item -->
+    
+                            
+    
+                            <!-- End Project Item --> 
+    
+                            
+    
+    
+                        <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
+    
+                    </div>
+    
+                    <!-- .col-md-6 -->
+    
+                    
+    
+                    <div class="col-md-5">
+    
+    
+    
+                            <!-- Start Notice Board -->
+    
+                                                    <h4 class="classic-title"><span>Notice Board</span></h4>
+                            <!-- Categories Widget -->
+                            <div class="latest-news" style="height:400px;overflow-y: scroll;">
+                                                            <!-- Post 1 -->
+                                
+                                <div class="post-row" style="float:left;">
+                                    <div class="post-time-section">
+                                        <div class="post-date">
+                                            <span class="day">22</span></div>
+                                        <div class="post-month">
+                                            <span class="month">Oct</span>
+                                        </div>
+                                    </div>
+                                    <!--<h3 class="post-title"><a href="#">&nbsp;</a></h3>-->
+                                    <div class="post-content">
+                                        <p>LAKSHMI DARPAN TERM I - OCTOBER 2024&nbsp;&nbsp; <a href="https://www.lakshmischool.org/assets/uploads/noticeboard/353aecb78178ba90cc35b320bd635522.pdf" target="_blank"><img src="https://www.lakshmischool.org/images/pdf-icon-16px.png"></a></p>
+                                    </div>
+                                </div>
+                                
+                                                            <!-- Post 1 -->
+                                
+                                <div class="post-row" style="float:left;">
+                                    <div class="post-time-section">
+                                        <div class="post-date">
+                                            <span class="day">28</span></div>
+                                        <div class="post-month">
+                                            <span class="month">Sep</span>
+                                        </div>
+                                    </div>
+                                    <!--<h3 class="post-title"><a href="#">&nbsp;</a></h3>-->
+                                    <div class="post-content">
+                                        <p>First Terminal Examination Timetable - Classes VI to VIII&nbsp;&nbsp; <a href="https://www.lakshmischool.org/assets/uploads/noticeboard/cd1ed22a75b8ed75dab485520f2acb18.pdf" target="_blank"><img src="https://www.lakshmischool.org/images/pdf-icon-16px.png"></a></p>
+                                    </div>
+                                </div>
+                                
+                                                            <!-- Post 1 -->
+                                
+                                <div class="post-row" style="float:left;">
+                                    <div class="post-time-section">
+                                        <div class="post-date">
+                                            <span class="day">28</span></div>
+                                        <div class="post-month">
+                                            <span class="month">Sep</span>
+                                        </div>
+                                    </div>
+                                    <!--<h3 class="post-title"><a href="#">&nbsp;</a></h3>-->
+                                    <div class="post-content">
+                                        <p>First Terminal Examination Timetable - Classes IX to XII&nbsp;&nbsp; <a href="https://www.lakshmischool.org/assets/uploads/noticeboard/980e5413ce4f77d77d00dac874029987.pdf" target="_blank"><img src="https://www.lakshmischool.org/images/pdf-icon-16px.png"></a></p>
+                                    </div>
+                                </div>
+                                
+                                                        </div>
+    <div class="bs-popup"> 
+                <div id="div-popup" class="modal fade" style="z-index:1000000000;"> 
+                    <div class="modal-dialog"> 
+                        <div class="modal-content">
+                            <div class="modal-header"> 
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button> 
+                                <h4 class="modal-title"></h4> 
+                            </div> 
+                            <div class="modal-body"> 
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" id="ifr-content" src="" frameborder="0" allowfullscreen=""></iframe>
+                                  </div>
+                            </div> 
+                        </div> 
+                    </div> 
+              </div> 
+    </div>
+                            <!-- End Notice Board -->
+    
+                            
+    
+                            
+    
+                        </div>
+    
+                    <!-- .col-md-6 --> 
+    
+                </div>
+    
+                
+    
+                <div class="hr1 margin-top"></div>
+    
+                
+    
+                
+    
+                <!-- .row --> 
+    
+            </div>
+    
+            <!-- .container --> 
+    
+            <!-- End News & Skill Section --> 
+    
+            
+    
+            <!-- Divider -->
+    
+            <div class="hr1 margin-top"></div>
+    
+            
+    
+            <div class="success-area pt-110 pb-105 text-center">
+    
+                <div class="container">
+    
+                    <div class="row">
+    
+                        <div class="col-md-12">
+    
+                            <!-- Start Recent Posts Carousel -->
+    
+                            <div class="latest-posts">
+    
+    
+    
+                                <!-- Classic Heading -->
+    
+                                <h4 class="classic-title"><span class="accent-color">RESULTS 2023 - 24</span></h4>
+    
+    
+    
+                                <div class="latest-posts-classic custom-carousel touch-carousel owl-carousel owl-theme" data-appeared-items="6" style="opacity: 1; display: block;">
+    
+    
+    
+    <!-- Start Project Item -->
+    
+                                    <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 126px; left: 0px; display: block; transition: 800ms; transform: translate3d(-7px, 0px, 0px);"><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/icse_topper_1_vishmaya.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>VISHMAYA B</h4>
+    
+                                                    <span class="white-text">ICSE TOPPER - I</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/icse_topper_2_ramasamy.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>RAMASAMY A</h4>
+    
+                                                    <span class="white-text">ICSE TOPPER - II</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/icse_topper_3_naren.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>NAREN K</h4>
+    
+                                                    <span class="white-text">ICSE TOPPER - III</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/isc_topper_sci_1_manasa.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>MANASA M</h4>
+    
+                                                    <span class="white-text">ISC TOPPER - I &nbsp;&nbsp;(SCIENCE)</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/isc_topper_sci_2_saigirish.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>SAIGIRISH S</h4>
+    
+                                                    <span class="white-text">ISC TOPPER - II &nbsp;&nbsp;(SCIENCE)</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/isc_topper_sci_3_bharathkumar.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>BHARATH KUMAR G</h4>
+    
+                                                    <span class="white-text">ISC TOPPER - III &nbsp;&nbsp;(SCIENCE)</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/isc_topper_comm_1_aswinikannathal.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>ASWINI KANNATHAL V</h4>
+    
+                                                    <span class="white-text">ISC TOPPER - I &nbsp;&nbsp;(COMMERCE)</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/isc_topper_comm_2_keerthanabharathi.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>KEERTHANA BHARATHI G S</h4>
+    
+                                                    <span class="white-text">ISC TOPPER - II &nbsp;&nbsp;(COMMERCE)</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div><div class="owl-item" style="width: 7px;"><div class="portfolio-item item">
+    
+                                        <div class="portfolio-border" style="min-height:300px;">
+    
+                                            <!-- Start Project Thumb -->
+    
+                                            <div class="portfolio-thumb">
+    
+                                                    <img alt="" src="https://www.lakshmischool.org/images/portfolio/isc_topper_comm_3_swetha.jpg">
+    
+                                            </div>
+    
+                                            <!-- End Project Thumb -->
+    
+                                            <!-- Start Project Details -->
+    
+                                            <div class="portfolio-details">
+    
+                                                    <h4>SWETHA S</h4>
+    
+                                                    <span class="white-text">ISC TOPPER - III &nbsp;&nbsp;(COMMERCE)</span>
+    
+                                            </div>
+    
+                                            <!-- End Project Details -->
+    
+                                        </div>
+    
+                                    </div></div></div></div>
+    
+                                    <!-- End Project Item -->
+    
+    <!-- Start Project Item -->
+    
+                                    
+                                    
+                                    
+    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+    
+                                <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
+    
+                            </div>
+    
+                            <!-- End Recent Posts Carousel -->
+    
+                        </div>
+    
+                        
+    
+                        <!--<div class="col-md-4"> 
+    
+                        
+    
+                       
+    
+                        <h4 class="classic-title"><span>Examination Highlights</span></h4>
+    
+                        <div class="progress-bars">
+    
+                            <div class="progress-label"> Pass Percentage ICSE 2019 </div>
+    
+                            <div class="progress">
+    
+                                <div class="progress-bar progress-bar-primary" data-progress-animation="100%"> <span class="progress-bar-tooltip">100%</span> </div>
+    
+                            </div>
+    
+                            <div class="progress-label"> Pass Percentage ISC 2019 </div>
+    
+                            <div class="progress">
+    
+                                <div class="progress-bar progress-bar-primary" data-progress-animation="100%" data-animation-delay="300"> <span class="progress-bar-tooltip">100%</span> </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>-->
+    
+                        
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            
+    
+            <!-- Start Clients/Partner Section -->
+    
+            <div class="container">
+    
+                <div class="our-clients"> 
+    
+                    
+    
+                    <!-- Classic Heading -->
+    
+                    <h4 class="classic-title"><span>Lakshmi Event Calendar</span></h4>
+    
+                    <div class="clients-carousel custom-carousel touch-carousel owl-carousel owl-theme" data-appeared-items="5" style="opacity: 1; display: block;"> 
+    
+                        
+    
+    
+                        <!-- Client 1 -->
+    
+                        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 80px; left: 0px; display: block; transition: 800ms; transform: translate3d(-10px, 0px, 0px);"><div class="owl-item" style="width: 10px;"><div class="client-item item text-center"> <a href="#">Nov 08, 2024</a> <p>MOTHERS' CLUB MEETING FOR LEVEL 3</p> </div></div><div class="owl-item" style="width: 10px;"><div class="client-item item text-center"> <a href="#">Nov 15, 2024</a> <p>MOTHERS' CLUB MEETING FOR CLASS VI</p> </div></div><div class="owl-item" style="width: 10px;"><div class="client-item item text-center"> <a href="#">Nov 16, 2024</a> <p>OPEN HOUSE FOR CLASSES I, X AND XII, MOTHERS' CLUB MEETING FOR PS II AND PARENTING SESSION FOR LEVEL</p> </div></div><div class="owl-item" style="width: 10px;"><div class="client-item item text-center"> <a href="#">Nov 18, 2024</a> <p>FAMILY BONDING DAY FOR PS II</p> </div></div></div></div>
+    
+    
+    
+                        
+    
+    
+                        <!-- Client 1 -->
+    
+                        
+    
+    
+    
+                        
+    
+    
+                        <!-- Client 1 -->
+    
+                        
+    
+    
+    
+                        
+    
+    
+                        <!-- Client 1 -->
+    
+                        
+    
+    
+    
+                                           
+    
+    
+    
+                    <div class="owl-controls clickable" style="display: block;"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
+    
+                </div>
+    
+            </div>
+    
+            <!-- .container --> 
+    
+            <!-- End Clients/Partner Section --> 
+    
+            
+    
+        </div>
+    
+        <!-- End Content --> 
+    
+    
+    
+        <!-- Start Footer -->
+    
+        <footer>
+        <div class="container">
+            <div class="row footer-widgets"> 
+                
+             <!-- Start Flickr Widget -->
+                <div class="col-md-3">
+                    <div class="footer-widget widget-categories">
+                            <h4>Information<span class="head-line"></span></h4>
+                            <ul>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/academic/">Academic</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/cocurricular/">Co-curricular</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/evalsystem/">Evaluation System</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/examresults/">Board Exam Result</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <!-- .col-md-3 --> 
+                <!-- End Flickr Widget --> 
+                
+                <!-- Start Flickr Widget -->
+                <div class="col-md-3">
+                    <div class="footer-widget widget-categories">
+                            <h4>Useful links<span class="head-line"></span></h4>
+                            <ul>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/aboutus/">About Us</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/history/">History</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/committee/">Committee Members</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/general/gallery/">Gallery</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <!-- .col-md-3 --> 
+                <!-- End Flickr Widget --> 
+                
+                <!-- Start Flickr Widget -->
+                <div class="col-md-3">
+                    <div class="footer-widget widget-categories">
+                            <h4>Other links<span class="head-line"></span></h4>
+                            <ul>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/downloads/textra-e20.pdf" target="_blank">Textra Mail</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/downloads/lakshmidarpan-mar2020.pdf" target="_blank">Lakshmi Darpan</a>
+                                </li>
+                                <li>
+                                    <a style="border:0;" href="https://www.lakshmischool.org/lsaa/home/">Alumni</a>
+                                </li>							
+                            </ul>
+                        </div>
+                </div>
+                <!-- .col-md-3 --> 
+                <!-- End Flickr Widget --> 
+                
+                <!-- Start Contact Widget -->
+                <div class="col-md-3">
+                    <div class="footer-widget contact-widget">
+                        <h4>Contact Info<span class="head-line"></span></h4>
+                        <ul>
+                            <li>LAKSHMI SCHOOL, VEERAPANCHAN, KARUPPAYURANI, MADURAI - 625 020.</li>
+                            <li><span>Mobile No.:</span> 98434 65255</li>
+                            <li><span>Email:</span> lakshmischool@tvslvs.com</li>
+                            <li><span>Website:</span> www.lakshmischool.org</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- .col-md-3 --> 
+                
+                
+            </div>
+            <!-- row --> 
+    
+        </div>
+        <!-- Start Copyright -->
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-6">
+                    <p>© 2023 Lakshmi School - All Rights Reserved </p>
+                </div>
+                <!--<div class="col-md-6">
+                    <ul class="footer-nav">
+                        <li><a href="#">Sitemap</a> </li>
+                        <li><a href="#">Privacy Policy</a> </li>
+                        <li><a href="#">Contact</a> </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+        <!-- End Copyright --> 
+    </footer>
+        <!-- End Footer --> 
+    
+    
+    
+    </div>
+    
+    <!-- End Container --> 
+    
+    <!-- Go To Top Link --> 
+    
+    <a href="#" class="back-to-top" style="display: none;"><i class="fa fa-arrow-up"></i></a>
+    
+    <!--
+    
+    <div id="loader">
+    
+        <div class="spinner">
+    
+            <div class="cube cube0"></div>
+    
+            <div class="cube cube1"></div>
+    
+            <div class="cube cube2"></div>
+    
+            <div class="cube cube3"></div>
+    
+            <div class="cube cube4"></div>
+    
+            <div class="cube cube5"></div>
+    
+    
+    
+            <div class="cube cube6"></div>
+    
+            <div class="cube cube7"></div>
+    
+            <div class="cube cube8"></div>
+    
+            <div class="cube cube9"></div>
+    
+            <div class="cube cube10"></div>
+    
+            <div class="cube cube11"></div>
+    
+            <div class="cube cube12"></div>
+    
+            <div class="cube cube13"></div>
+    
+            <div class="cube cube14"></div>
+    
+            <div class="cube cube15"></div>
+    
+        </div>
+    
+    </div>
+    
+    -->
+    
+    <div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.migrate.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/modernizrr.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/bootstrap/js/bootstrap.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.fitvids.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.appear.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.easing-1.3.pack.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/owl.carousel.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/nivo-lightbox.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.isotope.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/count-to.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.textillate.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.lettering.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.nicescroll.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.themepunch.plugins.min.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/jquery.themepunch.revolution.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/custom-revslider.js"></script> 
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/script.js"></script>
+    
+    <script type="text/javascript" src="https://www.lakshmischool.org/js/breaking-news-ticker.min.js"></script>
+    <script src="https://www.lakshmischool.org/js/lobibox.js"></script>
+    
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function(){			
+    //$('#newsTicker1').breakingNews();
+    
+        $('#newsTicker1').breakingNews({
+          direction: "ltr",
+          play: true,
+          width: 1000,
+          delayTimer: 4000,
+          scrollSpeed: 2,
+          stopOnHover: true,
+          effect: 'scroll'
+        });
+    });
+    
+    </script>
+    <script>
+    //$(function(){
+    //  $('.post-content').on('click', '.getcontent', function(){
+    //    alert($(this)[0].href);
+    //  });
+    //});
+            $(document).ready(function() {
+                 Lobibox.notify('info', {
+                        delay: false,
+                        rounded: true,
+                        title: '&nbsp;',
+                        icon: 'glyphicon glyphicon-hand-right',
+                        msg: '<a style="color:#FFFFFF;font-size:28px;text-decoration:underline;" href="https://www.lakshmischool.org/general/kaleidoscope/">Kaleidoscope</a>'
+                 });
+    
+                 //$("a.getcontent").click(function(event) {
+                 $("body").on("click", ".getcontent", function(){
+                         alert('Under Construction');
+                        var url = $(this).attr('data-value');
+                        //alert(url);
+                        var title = $(this).attr('title');
+                        $("#div-popup").on('hide.bs.modal', function() { 
+                            $("#ifr-content").attr('src', ''); 
+                        });
+                        $("#div-popup").on('show.bs.modal', function() { 
+                            $(".modal-title").html(title);
+                            $("#ifr-content").attr('src', url); 
+                        }); 
+                        
+                 });
+                 
+                //setTimeout(function() {
+                //$('#myModal').find('.item').first().addClass('active');
+               //$('#myModal').modal({
+                //		backdrop: 'static',
+                //		keyboard: false
+                //	});
+                //}, 1000);
+    
+            }); 
+    </script>
+    <div class="modal fade" id="myModal" role="dialog" style="z-index:1000000000;">
+        <div class="modal-dialog">
+    
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h4 class="modal-title"><!--<i class="fa fa-info"></i>--> </h4>
+            </div>
+    
+            <div class="modal-body">
+             
+              <!--<div class="embed-responsive-item embed-responsive-16by9">
+              <img class="img-responsive1" src="images/popup-image.jpeg" width="598" alt="blue" />
+              </div>-->
+    
+              <!--<div class="embed-responsive embed-responsive-16by9">
+              <video controls id="video1" class="embed-responsive-item">
+                <source src="downloads/paint_for_a_cause.mp4" type="video/mp4">
+              </video>
+              </div>-->
+            </div>
+    
+            <div class="modal-footer">
+    
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    
+            </div>
+    
+          </div>
+    
+    
+    
+        </div>
+    
+    </div>
+    
+    <div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 5px; z-index: 999999999; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; touch-action: none; display: block; opacity: 0;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 5px; height: 32px; background-color: rgb(51, 51, 51); border: 0px; background-clip: padding-box; border-radius: 0px; touch-action: none;"></div></div><div class="lobibox-notify-wrapper bottom right"><div class="lobibox-notify lobibox-notify-info animated-fast fadeInDown rounded" style="width: 400px;"><div class="lobibox-notify-icon-wrapper"><div class="lobibox-notify-icon"><div><div class="icon-el"><i class="glyphicon glyphicon-hand-right"></i></div></div></div></div><div class="lobibox-notify-body"><div class="lobibox-notify-title">&nbsp;<div></div></div><div class="lobibox-notify-msg" style="max-height: 60px;"><a style="color:#FFFFFF;font-size:28px;text-decoration:underline;" href="https://www.lakshmischool.org/general/kaleidoscope/">Kaleidoscope</a></div></div><span class="lobibox-close">×</span></div></div></body></html>

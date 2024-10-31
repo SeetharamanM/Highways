@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Highways</title>
+         
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
+        
+        
+    </head>
+    <body class="sb-nav-fixed">
+
+        <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color: #00A4B4">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Usilampatti Highways</a>
+            
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." />
+                    <button class="btn btn-light" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./assets/Excel2Html.html">Open Excel File</a></li>
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" style="background-color:#00A4B4 " id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Index</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Login
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseRoadData" aria-expanded="false" aria-controls="collapseRoadData">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Road Data
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseRoadData" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="ListOfRoad.html">List of Roads</a>
+                                    <a class="nav-link" href="CulvertList.html">List of All CD Structures</a>
+                                    <a class="nav-link" href="MinorBridge.html">List of Bridges</a>
+                                    <a class="nav-link" href="PipeCulvert.html">List of Pipe Culverts</a>
+                                    <a class="nav-link" href="BoxCulvert.html">List of Box Culverts</a>
+                                    <a class="nav-link" href="CutStone.html">List of Cut Stone Slab Culverts</a>
+                                    <a class="nav-link" href="Causeway.html">List of Causeways</a>
+                                    <a class="nav-link" href="RoadChart.html">Road Chart</a>
+                                  
+                                </nav>
+                            </div>
+                            
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseworks" aria-expanded="false" aria-controls="collapseworks">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                CRIDP and SR Works 2023-24
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseworks" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Agreements2324.html">2023-24 Agreements</a>
+                                    <a class="nav-link" href="#cridp2324">2023-24 CRIDP Works</a>
+                                    <a class="nav-link" href="#srpr2324">2023-24 SR Works</a>
+                                    <a class="nav-link" href="Hotspot1.html">Hot Spot I</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Road Safety Works</a>
+                                    <a class="nav-link" href="Upkeeping.html">Upkeeping Works</a> 
+                                    <a class="nav-link" href="layout-sidenav-light.html">Maintenance 2023-24 Works</a>  
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapse2425" aria-expanded="false" aria-controls="collapseworks">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                CRIDP and SR Works 2024-25
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapse2425" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Agreements2425.html">2023-24 Agreements</a>
+                                    <a class="nav-link" href="#cridp2425">2023-24 CRIDP Works</a>
+                                    <a class="nav-link" href="#srpr2425">2023-24 SR Works</a>
+                                    <a class="nav-link" href="Upkeeping.html">Upkeeping Works</a> 
+                                    <a class="nav-link" href="layout-sidenav-light.html">Maintenance 2023-24 Works</a>  
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Projects
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProjects" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="mannadimangalam.html">Mannadimangalam Bridge work</a>
+                                    <a class="nav-link" href="VaigaiNBR.html">Vaigai North Bank Road</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProposals" aria-expanded="false" aria-controls="collapseProposals">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Proposals
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseProposals" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Hot Spot II</a>
+                                    <a class="nav-link" href="madurai_JN.html">Curve Improvement</a>
+                                </nav>
+                                                    
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePipeline" aria-expanded="false" aria-controls="collapseProposals">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Pipe Line Permissions
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePipeline" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="twad.html">TWAD</a>
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer text-white" style="background-color: #0A598A">
+                        <div class="small text-white">Logged in as:</div>
+                        Seetharaman
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4 px-0 mx-0 text-center text-white" style="background-color: #004bb4">Dashboard</h1>
+                        
+                        <div class="row mt-4 pt-4 px-2" style="background-color: #BEC3C6">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Length of Roads</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>State Highways</td> <td>35.800 KM</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Major District Roads</td> <td>56.140 KM</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Other District Roads</td> <td>121.185 KM</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Sugarcane Roads</td> <td>10.300 KM</td>
+                                            </tr>
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Cross Drainage Structures</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>Minor Bridges</td> <td>25 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>RCC Slab Culverts</td> <td>68 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Box Culverts</td> <td>40 nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Cut Stone Culverts</td> <td>76 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Pipe Culverts</td> <td>259 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Road Dam</td> <td>15 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total CD Structures</td> <td>483 Nos</td>
+                                            </tr>
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Minor Bridges</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>length &gt; 60 M</td> <td>1 No</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Length &gt 30M</td> <td>7 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Length &gt 20 M</td> <td>11 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Length &lt 20 M</td> <td>6 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Total </td> <td>25 Nos</td>
+                                            </tr>
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-white text-black mb-4 shadow">
+                                    <div class="card-body">
+                                    <h4 >Pipe Culverts</h4>
+                                    <div class="card-text">
+                                        <table class="table table-striped">
+                                            <tr>
+                                            <td>15 Row 450mm dia</td> <td>1 No</td>
+                                            </tr>
+                                            <tr>
+                                            <td>7 Row 900mm dia</td> <td>1 No</td>
+                                            </tr>
+                                            <tr>
+                                            <td>5 Row Pipe Culvert</td> <td> 2 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4 Row Pipe Culvert</td> <td>7 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3 Row Pipe Culvert</td> <td>14 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>2 Row Pipe Culvert</td> <td>52 Nos</td>
+                                            </tr>
+                                            <tr>
+                                            <td>One Row Pipe Culvert</td> <td>180 Nos</td>
+                                            </tr>
+                                            </table>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                            
+                            
+                        
+                        
+                    <div class="row px-4" style="background-color: #BEC3C6">
+                        <div class="card mb-4 shadow">
+                            <div class="card-header " style="background-color: #00A4B4 ">
+                                <i class="fas fa-table me-1"></i>
+                                Works 2024-25
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Name of Work</th>
+                                            <th>Estmate Cost</th>
+                                            <th>Contract Value</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Status</th>
+                                            <th>Contractor</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Estmate Cost</th>
+                                            <th>Contract Value</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Status</th>
+                                            <th>Contractor</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td id="cridp2425"><span><b>CRIDP 2024-25 (Package MDU-59)</b></span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+											
+                                        </tr>
+                                        <tr>
+                                            <td>Improvements to Riding Quality at km 0/0 - 1/0 of Elumalai road</td>
+                                            <td><a href="./assets/elumalai.html" target="_blank" data-bs-toggle="tooltip" title="Click for Work details">Rs 45.00 Lakhs</a></td>
+											<td>Rs 41.28 Lakhs</td>
+											<td></td>
+											<td></td>
+											<td><span class="badge bg-success">tendered</span></td>
+											<td>Sri Hari Constructions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Widening from Single Lane to Two Lane and Strengthening at km 7/8 - 8/8 of Uthappanaickanur-Peranai road</td>
+                                            <td><a href="./assets/peranai.html" target="_blank" data-bs-toggle="tooltip" title="Click for Work details" >Rs 160.00 Lakhs</a></td>
+											<td>143.80 Lakhs</td>
+											<td></td>
+											<td></td>
+											<td><span class="badge bg-success">Tendered</span></td>
+											<td>Sri Hari Constructions</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="cridp2425"><span><b>CRIDP 2024-25 (Single work)</b></span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+											
+                                        </tr>
+                                        <tr>
+                                            <td>Improvements to Riding Quality at km 7/4 - 13/4 of Kokkulam-Uthappanaickanur road</td>
+                                            <td><a href="./assets/uthappanaickanur.html" target="_blank" data-bs-toggle="tooltip" title="Click for Work details">Rs 250.00 Lakhs</a></td>
+											<td>212.03 Lakhs</td>
+											<td></td>
+											<td></td>
+											<td><span class="badge bg-success">Tendered</span></td>
+											<td>Sathees</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="srpr2425"><span><b>SRPR 2024-25 (Packge MDU-117)</b></span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>Special Repairs to Ariyapatti - Paluthupatti road in km 0/0 - 4/065</td>
+                                            <td>
+                                                Rs 104.Lakhs
+                                            </td>
+                                            
+											<td>88.36 Lakhs</td>
+											<td></td>
+											<td></td>
+											<td><span class="badge bg-success">Tendered</span></td>
+											<td>MBM Builders</td>
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>Special Repairs to Andipatti road branching from 7/2 of Kovilankulam - Thimmanatham road (O 282) in Km 0/0 - 1/4.</td>
+                                            <td>
+                                                Rs 37.00 Lakhs
+                                            </td>
+                                            
+											<td>Rs 35.14 Lakhs</td>
+											<td></td>
+											<td></td>
+											<td><span class="badge bg-success">Tendered</span></td>
+											<td>MBM Builders</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--<div><button class="btn" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="bottom" data-bs-content="Proc.No.AS-1/2023-24/JDO-3 dt 26.06.2023">Rs 9,99,876</button></div>-->
+      
+                </main>
+                <footer class="py-4 mt-auto" style="background-color: #0A598A">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-white">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#" class="text-white">Privacy Policy</a>
+                                &middot;
+                                <a href="#" class="text-white">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
